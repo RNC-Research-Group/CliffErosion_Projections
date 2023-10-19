@@ -37,8 +37,8 @@ def predict(df, azimuth_lookup, model="linear", Historic_SLR=0.002, Proj_SLR=0.0
         df (pd.DataFrame): dataframe with columns: TransectID, Date, Distance, YearsSinceBase
         azimuth_lookup (dict): dict lookup of TransectID to Azimuth
         model (str, optional): a model from SUPPORTED_MODELS. Defaults to "linear".
-        Historic_SLR (float, optional): Historic Sea Level Rise, only used for the SQRT and BH models. Defaults to 0.002.
-        Proj_SLR (float, optional): Projected Sea Level Rise, only used for the SQRT and BH models. Defaults to 0.01.
+        Historic_SLR (float, optional): Historic Sea Level Rise, only used for the SQRT, BH and Sunamura models. Defaults to 0.002.
+        Proj_SLR (float, optional): Projected Sea Level Rise, only used for the SQRT, BH and Sunamura models. Defaults to 0.01.
 
     Raises:
         ValueError: if you provide an unsupported model
