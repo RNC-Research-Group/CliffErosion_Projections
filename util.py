@@ -30,7 +30,13 @@ def calculate_new_coordinates(old_x, old_y, bearing, distance):
     return Point(new_x, new_y)
 
 
-def predict(df, azimuth_lookup, model="linear", Historic_SLR=0.002, Proj_SLR=0.01):
+def predict(
+    df: pd.DataFrame,
+    azimuth_lookup: dict,
+    model="linear",
+    Historic_SLR=0.002,
+    Proj_SLR=0.01,
+):
     """_summary_
 
     Args:
