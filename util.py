@@ -128,13 +128,14 @@ def get_azimuth_dict(transect_lines_shapefile):
 
 
 if __name__ == "__main__":
-    df = gpd.read_file("Shapefiles/OhaweBeach_intersects.shp")
-    df.crs = 2193
-    df = enrich_df(df)
-    azimuth_lookup = get_azimuth_dict("Shapefiles/OhaweBeach_TransectLines.shp")
-    for model in tqdm(SUPPORTED_MODELS):
-        results = predict(df, azimuth_lookup, model)
-        polygon = prediction_results_to_polygon(results)
-        output_shapefile = f"Projected_Shoreline_Polygons/OhaweBeach_{model}.shp"
-        polygon.to_file(output_shapefile, driver="ESRI Shapefile")
-        print(f"Wrote {output_shapefile}")
+    for site in tqdm(["OhaweBeach", "Waitara"]):
+        df = gpd.read_file(f"Shapefiles/{site}_intersects.shp")
+        df.crs = 2193
+        df = enrich_df(df)
+        azimuth_lookup = get_azimuth_dict(f"Shapefiles/{site}_TransectLines.shp")
+        for model in tqdm(SUPPORTED_MODELS):
+            results = predict(df, azimuth_lookup, model)
+            polygon = prediction_results_to_polygon(results)
+            output_shapefile = f"Projected_Shoreline_Polygons/{site}_{model}.shp"
+            polygon.to_file(output_shapefile, driver="ESRI Shapefile")
+            print(f"Wrote {output_shapefile}")

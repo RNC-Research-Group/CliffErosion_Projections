@@ -4,3 +4,7 @@ This contains codes for different shoreline projection formulas and methodologie
 ### Installation
 
 `pip install -r requirements.txt`
+
+### Usage
+
+Either modify util.py and run it, or modify Shoreline Projection.ipynb and run it
