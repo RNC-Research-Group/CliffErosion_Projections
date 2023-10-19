@@ -9,7 +9,7 @@ from tqdm.auto import tqdm
 
 BASE_YEAR = 1940
 FUTURE_YEAR = 2100
-SUPPORTED_MODELS = ["linear", "double", "sqrt", "BH"]
+SUPPORTED_MODELS = ["linear", "double", "sqrt", "BH", "Sunamura"]
 
 
 def enrich_df(df):
@@ -75,6 +75,16 @@ def predict(df, azimuth_lookup, model="linear", Historic_SLR=0.002, Proj_SLR=0.0
             Y = Length_AP / X
             Z = (Proj_SLR - Historic_SLR) * Y
             slope += Z
+        elif model == "Sunamura":
+            # Sunamara relationship inputs
+            Length_AP = 82.1
+            C_Depth = 9.577
+
+            # Bray and Hooke relationship
+            X = C_Depth / (slope + Length_AP)
+            Y = (Proj_SLR - Historic_SLR) / X
+            slope += Y
+
         intercept = coefficients[1]
         # Erosion only
         if slope < 0:
