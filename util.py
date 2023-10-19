@@ -9,7 +9,7 @@ from tqdm.auto import tqdm
 
 BASE_YEAR = 1940
 FUTURE_YEAR = 2100
-SUPPORTED_MODELS = ["linear", "double", "sqrt"]
+SUPPORTED_MODELS = ["linear", "double", "sqrt", "BH"]
 
 
 def enrich_df(df):
@@ -37,8 +37,8 @@ def predict(df, azimuth_lookup, model="linear", Historic_SLR=0.002, Proj_SLR=0.0
         df (pd.DataFrame): dataframe with columns: TransectID, Date, Distance, YearsSinceBase
         azimuth_lookup (dict): dict lookup of TransectID to Azimuth
         model (str, optional): a model from SUPPORTED_MODELS. Defaults to "linear".
-        Historic_SLR (float, optional): Historic Sea Level Rise, only used for the SQRT model. Defaults to 0.002.
-        Proj_SLR (float, optional): Projected Sea Level Rise, only used for the SQRT model. Defaults to 0.01.
+        Historic_SLR (float, optional): Historic Sea Level Rise, only used for the SQRT and BH models. Defaults to 0.002.
+        Proj_SLR (float, optional): Projected Sea Level Rise, only used for the SQRT and BH models. Defaults to 0.01.
 
     Raises:
         ValueError: if you provide an unsupported model
@@ -47,7 +47,9 @@ def predict(df, azimuth_lookup, model="linear", Historic_SLR=0.002, Proj_SLR=0.0
         pd.DataFrame: resulting prediction points for the year 2100
     """
     if model not in SUPPORTED_MODELS:
-        raise ValueError(f"Model {model} not supported. Supported models: {SUPPORTED_MODELS}")
+        raise ValueError(
+            f"Model {model} not supported. Supported models: {SUPPORTED_MODELS}"
+        )
     grouped = df.groupby("TransectID")
     results = []
     for group_name, group_data in tqdm(grouped):
@@ -59,8 +61,20 @@ def predict(df, azimuth_lookup, model="linear", Historic_SLR=0.002, Proj_SLR=0.0
             slope *= 2
         elif model == "sqrt":
             # Walkden and Dickson sqrt relationship
-            SQRT = (Proj_SLR/Historic_SLR) ** 0.5
+            SQRT = (Proj_SLR / Historic_SLR) ** 0.5
             slope *= SQRT
+        elif model == "BH":
+            # Bray and Hooke relationship inputs
+            Length_AP = 82.1
+            Prop = 0.1
+            B_Height = 20
+            C_Depth = 9.577
+
+            # Bray and Hooke relationship
+            X = Prop * (B_Height + C_Depth)
+            Y = Length_AP / X
+            Z = (Proj_SLR - Historic_SLR) * Y
+            slope += Z
         intercept = coefficients[1]
         # Erosion only
         if slope < 0:
