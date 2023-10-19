@@ -12,7 +12,7 @@ FUTURE_YEAR = 2100
 SUPPORTED_MODELS = ["linear", "double", "sqrt", "BH", "Sunamura"]
 
 
-def enrich_df(df):
+def enrich_df(df: pd.DataFrame):
     df["Date"] = pd.to_datetime(df.ShorelineI, dayfirst=True)
     df["Year"] = df.Date.dt.year
     df["YearsSinceBase"] = (df.Date - pd.Timestamp(BASE_YEAR, 1, 1)).dt.days / 365.25
@@ -120,13 +120,13 @@ def predict(
     return results
 
 
-def prediction_results_to_polygon(results):
+def prediction_results_to_polygon(results: gpd.GeoDataFrame):
     polygon = Polygon([*list(results.geometry), *list(results.ocean_point)[::-1]])
     polygon = gpd.GeoSeries(polygon, crs=2193)
     return polygon
 
 
-def get_azimuth_dict(transect_lines_shapefile):
+def get_azimuth_dict(transect_lines_shapefile: str):
     TransectLine = gpd.read_file(transect_lines_shapefile)
     TransectLine.set_index("TransectID", inplace=True)
     azimuth_lookup = TransectLine.Azimuth.to_dict()
