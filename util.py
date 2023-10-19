@@ -9,7 +9,7 @@ from tqdm.auto import tqdm
 
 BASE_YEAR = 1940
 FUTURE_YEAR = 2100
-SUPPORTED_MODELS = ["linear"]
+SUPPORTED_MODELS = ["linear", "double", "sqrt"]
 
 
 def enrich_df(df):
@@ -30,8 +30,24 @@ def calculate_new_coordinates(old_x, old_y, bearing, distance):
     return Point(new_x, new_y)
 
 
-def predict(df, azimuth_lookup, model="linear"):
-    df = enrich_df(df)
+def predict(df, azimuth_lookup, model="linear", Historic_SLR=0.002, Proj_SLR=0.01):
+    """_summary_
+
+    Args:
+        df (pd.DataFrame): dataframe with columns: TransectID, Date, Distance, YearsSinceBase
+        azimuth_lookup (dict): dict lookup of TransectID to Azimuth
+        model (str, optional): a model from SUPPORTED_MODELS. Defaults to "linear".
+        Historic_SLR (float, optional): Historic Sea Level Rise, only used for the SQRT model. Defaults to 0.002.
+        Proj_SLR (float, optional): Projected Sea Level Rise, only used for the SQRT model. Defaults to 0.01.
+
+    Raises:
+        ValueError: if you provide an unsupported model
+
+    Returns:
+        pd.DataFrame: resulting prediction points for the year 2100
+    """
+    if model not in SUPPORTED_MODELS:
+        raise ValueError(f"Model {model} not supported. Supported models: {SUPPORTED_MODELS}")
     grouped = df.groupby("TransectID")
     results = []
     for group_name, group_data in tqdm(grouped):
@@ -39,6 +55,12 @@ def predict(df, azimuth_lookup, model="linear"):
             continue
         coefficients = np.polyfit(group_data.YearsSinceBase, group_data.Distance, 1)
         slope = coefficients[0]
+        if model == "double":
+            slope *= 2
+        elif model == "sqrt":
+            # Walkden and Dickson sqrt relationship
+            SQRT = (Proj_SLR/Historic_SLR) ** 0.5
+            slope *= SQRT
         intercept = coefficients[1]
         # Erosion only
         if slope < 0:
@@ -84,9 +106,11 @@ def get_azimuth_dict(transect_lines_shapefile):
 if __name__ == "__main__":
     df = gpd.read_file("Shapefiles/OhaweBeach_intersects.shp")
     df.crs = 2193
+    df = enrich_df(df)
     azimuth_lookup = get_azimuth_dict("Shapefiles/OhaweBeach_TransectLines.shp")
-    results = predict(df, azimuth_lookup)
-    polygon = prediction_results_to_polygon(results)
-    output_shapefile = "Projected_Shoreline_Polygons/OhaweBeach_linear.shp"
-    polygon.to_file(output_shapefile, driver="ESRI Shapefile")
-    print(f"Wrote {output_shapefile}")
+    for model in tqdm(SUPPORTED_MODELS):
+        results = predict(df, azimuth_lookup, model)
+        polygon = prediction_results_to_polygon(results)
+        output_shapefile = f"Projected_Shoreline_Polygons/OhaweBeach_{model}.shp"
+        polygon.to_file(output_shapefile, driver="ESRI Shapefile")
+        print(f"Wrote {output_shapefile}")
