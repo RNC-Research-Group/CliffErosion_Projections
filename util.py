@@ -3,6 +3,7 @@
 import geopandas as gpd  # Geospatial data
 import pandas as pd  # Tabular data
 import numpy as np  # Linear model
+from sklearn.linear_model import LinearRegression
 import math
 from shapely.geometry import Point, Polygon
 from tqdm.auto import tqdm
@@ -47,6 +48,10 @@ def predict(
         azimuth_lookup (dict): dict lookup of TransectID to Azimuth
         Historic_SLR (float, optional): Historic Sea Level Rise, only used for the SQRT, BH and Sunamura models. Defaults to 0.002.
         Proj_SLR (float, optional): Projected Sea Level Rise, only used for the SQRT, BH and Sunamura models. Defaults to 0.01.
+        Length_AP (float, optional): Length of active profile, distance between closure depth and cliff toe. Only used for the BH and Sunamura models. Defaults to 82.1.
+        Prop (float, optional): Proportion of removable sediments from the beach equilibrium. Only used for the BH model. Defaults to 0.1.
+        B_Height (float, optional): Cliff height. Only used for the BH model. Defaults to 20.
+        C_Depth (float, optional): Closure depth. Only used for the BH and Sunamura models. Defaults to 9.577.
 
     Raises:
         ValueError: if you provide an unsupported model
@@ -56,11 +61,12 @@ def predict(
     """
     grouped = df.groupby("TransectID")
     results = []
-    for group_name, group_data in tqdm(grouped):
+    for group_name, group_data in grouped:
         if group_name not in azimuth_lookup.keys():
             continue
-        coefficients = np.polyfit(group_data.YearsSinceBase, group_data.Distance, 1)
-        slope = coefficients[0]
+        linear_model = LinearRegression().fit(group_data.YearsSinceBase.to_numpy().reshape(-1, 1), group_data.Distance)
+        slope = linear_model.coef_[0]
+        intercept = linear_model.intercept_
         # Erosion only
         if slope > 0:
             continue
@@ -78,8 +84,8 @@ def predict(
         }
 
         for model in SUPPORTED_MODELS:
-            slope = coefficients[0]
-            intercept = coefficients[1]
+            slope = linear_model.coef_[0]
+            intercept = linear_model.intercept_
             if model == "linear":
                 pass
             elif model == "sqrt":
