@@ -74,6 +74,7 @@ def predict(
         latest_row = group_data[group_data.Date == group_data["Date"].max()].iloc[0]
         result = {
             "TransectID": group_name,
+            "BaselineID": latest_row.BaselineID,
             "Year": FUTURE_YEAR,
             "ocean_point": calculate_new_coordinates(
                 latest_row.geometry.x,
@@ -117,9 +118,11 @@ def predict(
 
 
 def prediction_results_to_polygon(results: gpd.GeoDataFrame):
-    polygon = Polygon([*list(results.geometry), *list(results.ocean_point)[::-1]])
-    polygon = gpd.GeoSeries(polygon, crs=2193)
-    return polygon
+    polygons = []
+    for group_name, group_data in results.groupby("BaselineID"):
+        polygons.append(Polygon([*list(group_data.geometry), *list(group_data.ocean_point)[::-1]]))
+    polygons = gpd.GeoSeries(polygons, crs=2193)
+    return polygons
 
 
 def get_azimuth_dict(transect_lines_shapefile: str):
