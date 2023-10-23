@@ -8,3 +8,4 @@ rapidfuzz
 folium
 mapclassify
 matplotlib
+xyzservices
