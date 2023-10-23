@@ -4,3 +4,4 @@ numpy
 shapely
 tqdm
 scikit-learn
+rapidfuzz
