@@ -7,6 +7,12 @@ from sklearn.linear_model import LinearRegression
 import math
 from shapely.geometry import Point, Polygon
 from tqdm.auto import tqdm
+from tqdm.contrib.concurrent import process_map
+import rapidfuzz # Fuzzy string matching
+import os
+import warnings
+warnings.filterwarnings("ignore", message="CRS not set for some of the concatenation inputs")
+warnings.filterwarnings("ignore", message="invalid value encountered in distance")
 
 BASE_YEAR = 1940
 FUTURE_YEAR = 2100
@@ -33,7 +39,7 @@ def calculate_new_coordinates(old_x, old_y, bearing, distance):
 
 def predict(
     df: pd.DataFrame,
-    azimuth_lookup: dict,
+    transect_metadata: dict,
     Historic_SLR=0.002,
     Proj_SLR=0.01,
     Length_AP=82.1,
@@ -45,7 +51,7 @@ def predict(
 
     Args:
         df (pd.DataFrame): dataframe with columns: TransectID, Date, Distance, YearsSinceBase
-        azimuth_lookup (dict): dict lookup of TransectID to Azimuth
+        transect_metadata (dict): dict lookup of TransectID to Azimuth & group
         Historic_SLR (float, optional): Historic Sea Level Rise, only used for the SQRT, BH and Sunamura models. Defaults to 0.002.
         Proj_SLR (float, optional): Projected Sea Level Rise, only used for the SQRT, BH and Sunamura models. Defaults to 0.01.
         Length_AP (float, optional): Length of active profile, distance between closure depth and cliff toe. Only used for the BH and Sunamura models. Defaults to 82.1.
@@ -62,7 +68,7 @@ def predict(
     grouped = df.groupby("TransectID")
     results = []
     for group_name, group_data in grouped:
-        if group_name not in azimuth_lookup.keys():
+        if group_name not in transect_metadata.keys():
             continue
         linear_model = LinearRegression().fit(group_data.YearsSinceBase.to_numpy().reshape(-1, 1), group_data.Distance)
         slope = linear_model.coef_[0]
@@ -75,11 +81,12 @@ def predict(
         result = {
             "TransectID": group_name,
             "BaselineID": latest_row.BaselineID,
+            "group": transect_metadata[group_name]["group"],
             "Year": FUTURE_YEAR,
             "ocean_point": calculate_new_coordinates(
                 latest_row.geometry.x,
                 latest_row.geometry.y,
-                azimuth_lookup[group_name] + 180,
+                transect_metadata[group_name]["Azimuth"] + 180,
                 500,
             ),
         }
@@ -109,7 +116,7 @@ def predict(
             result[f"{model}_model_point"] = calculate_new_coordinates(
                 latest_row.geometry.x,
                 latest_row.geometry.y,
-                azimuth_lookup[group_name],
+                transect_metadata[group_name]["Azimuth"],
                 distance_difference,
             )
         results.append(result)
@@ -119,29 +126,80 @@ def predict(
 
 def prediction_results_to_polygon(results: gpd.GeoDataFrame):
     polygons = []
-    for group_name, group_data in results.groupby("BaselineID"):
-        polygons.append(Polygon([*list(group_data.geometry), *list(group_data.ocean_point)[::-1]]))
+    for group_name, group_data in results.groupby(["BaselineID", "group"]):
+        if len(group_data) > 1:
+            polygons.append(Polygon([*list(group_data.geometry), *list(group_data.ocean_point)[::-1]]))
     polygons = gpd.GeoSeries(polygons, crs=2193)
     return polygons
 
 
-def get_azimuth_dict(transect_lines_shapefile: str):
-    TransectLine = gpd.read_file(transect_lines_shapefile)
-    TransectLine.set_index("TransectID", inplace=True)
-    azimuth_lookup = TransectLine.Azimuth.to_dict()
-    return azimuth_lookup
+def get_transect_metadata(transect_lines_shapefile: str):
+    lines = gpd.read_file(transect_lines_shapefile).set_index("TransectID").sort_index()
+    lines["dist_to_neighbour"] = lines.distance(lines.shift(-1))
+    breakpoints = lines.dist_to_neighbour[lines.dist_to_neighbour > 11]
+    lines["group"] = pd.Series(range(len(breakpoints)), index=breakpoints.index)
+    lines["group"] = lines.group.bfill().fillna(len(breakpoints)).astype(int)
+    metadata = lines[["Azimuth", "group"]].to_dict(orient="index")
+    return metadata
 
+def process_file(index_and_row):
+    i, row = index_and_row
 
-if __name__ == "__main__":
-    for site in tqdm(["OhaweBeach", "Waitara"]):
-        df = gpd.read_file(f"Shapefiles/{site}_intersects.shp")
-        df.crs = 2193
-        df = enrich_df(df)
-        azimuth_lookup = get_azimuth_dict(f"Shapefiles/{site}_TransectLines.shp")
-        results = predict(df, azimuth_lookup)
+    SLR_rate_column_names = row.index[row.index.str.startswith("Rate SSP")]
+
+    site = row.match
+    gdf = gpd.read_file(f"Shapefiles/{site}_intersects.shp")
+    gdf.crs = 2193
+    gdf = enrich_df(gdf)
+    transect_metadata = get_transect_metadata(f"Shapefiles/{site}_TransectLines.shp")
+    if site == "ManaBayCliffs":
+        print("Flipping")
+        for k, v in transect_metadata.items():
+            transect_metadata[k]["Azimuth"] = v["Azimuth"] + 180
+    for SLR_rate_column_name in SLR_rate_column_names:
+        results = predict(gdf, transect_metadata, Proj_SLR=row[SLR_rate_column_name])
         for model in SUPPORTED_MODELS:
             results.set_geometry(f"{model}_model_point", inplace=True, crs=2193)
             polygon = prediction_results_to_polygon(results)
-            output_shapefile = f"Projected_Shoreline_Polygons/{site}_{model}.shp"
+            output_shapefile = f"Projected_Shoreline_Polygons/{site}_{model}_{SLR_rate_column_name}.shp"
             polygon.to_file(output_shapefile, driver="ESRI Shapefile")
-            print(f"Wrote {output_shapefile}")
+
+
+def fuzz_preprocess(filename):
+    # When fuzzy matching, ignore these strings
+    strings_to_delete = ["_", "Cliffs", "Cliff"]
+    for s in strings_to_delete:
+        filename = filename.replace(s, "")
+    # Case-insensitive
+    filename = filename.lower()
+    # Ignore extension
+    filename = os.path.splitext(filename)[0]
+    # Basename only
+    filename = os.path.basename(filename)
+    return filename
+
+def get_match(filename, choices):
+    match, score, index = rapidfuzz.process.extractOne(query=filename, choices=choices, processor=fuzz_preprocess)
+    return match, score
+
+def load_AOIs():
+    df = pd.read_excel("AOI_SLR_rates.xlsx")
+    file_AOIs = [f.replace("_intersects.shp", "") for f in os.listdir("Shapefiles") if f.endswith("_intersects.shp")]
+    df["match"], df["match_score"] = zip(*df.AOI.apply(get_match, choices=file_AOIs))
+    return df.sort_values(by="match_score")
+
+def run_all_sequential():
+    df = load_AOIs()
+    for f in df.iterrows():
+        print(f)
+        process_file(f)
+
+def run_all_parallel():
+    df = load_AOIs()
+    # Run all models on all AOIs in parallel
+    process_map(process_file, df.iterrows(), total=len(df))
+
+
+if __name__ == "__main__":
+    #run_all_sequential()
+    run_all_parallel()
