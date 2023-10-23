@@ -8,10 +8,13 @@ import math
 from shapely.geometry import Point, Polygon
 from tqdm.auto import tqdm
 from tqdm.contrib.concurrent import process_map
-import rapidfuzz # Fuzzy string matching
+import rapidfuzz  # Fuzzy string matching
 import os
 import warnings
-warnings.filterwarnings("ignore", message="CRS not set for some of the concatenation inputs")
+
+warnings.filterwarnings(
+    "ignore", message="CRS not set for some of the concatenation inputs"
+)
 warnings.filterwarnings("ignore", message="invalid value encountered in distance")
 
 BASE_YEAR = 1940
@@ -45,7 +48,7 @@ def predict(
     Length_AP=82.1,
     Prop=0.1,
     B_Height=20,
-    C_Depth=9.577
+    C_Depth=9.577,
 ):
     """_summary_
 
@@ -70,7 +73,9 @@ def predict(
     for group_name, group_data in grouped:
         if group_name not in transect_metadata.keys():
             continue
-        linear_model = LinearRegression().fit(group_data.YearsSinceBase.to_numpy().reshape(-1, 1), group_data.Distance)
+        linear_model = LinearRegression().fit(
+            group_data.YearsSinceBase.to_numpy().reshape(-1, 1), group_data.Distance
+        )
         slope = linear_model.coef_[0]
         intercept = linear_model.intercept_
         # Erosion only
@@ -128,7 +133,11 @@ def prediction_results_to_polygon(results: gpd.GeoDataFrame):
     polygons = []
     for group_name, group_data in results.groupby(["BaselineID", "group"]):
         if len(group_data) > 1:
-            polygons.append(Polygon([*list(group_data.geometry), *list(group_data.ocean_point)[::-1]]))
+            polygons.append(
+                Polygon(
+                    [*list(group_data.geometry), *list(group_data.ocean_point)[::-1]]
+                )
+            )
     polygons = gpd.GeoSeries(polygons, crs=2193)
     return polygons
 
@@ -141,6 +150,7 @@ def get_transect_metadata(transect_lines_shapefile: str):
     lines["group"] = lines.group.bfill().fillna(len(breakpoints)).astype(int)
     metadata = lines[["Azimuth", "group"]].to_dict(orient="index")
     return metadata
+
 
 def process_file(index_and_row):
     i, row = index_and_row
@@ -178,21 +188,31 @@ def fuzz_preprocess(filename):
     filename = os.path.basename(filename)
     return filename
 
+
 def get_match(filename, choices):
-    match, score, index = rapidfuzz.process.extractOne(query=filename, choices=choices, processor=fuzz_preprocess)
+    match, score, index = rapidfuzz.process.extractOne(
+        query=filename, choices=choices, processor=fuzz_preprocess
+    )
     return match, score
+
 
 def load_AOIs():
     df = pd.read_excel("AOI_SLR_rates.xlsx")
-    file_AOIs = [f.replace("_intersects.shp", "") for f in os.listdir("Shapefiles") if f.endswith("_intersects.shp")]
+    file_AOIs = [
+        f.replace("_intersects.shp", "")
+        for f in os.listdir("Shapefiles")
+        if f.endswith("_intersects.shp")
+    ]
     df["match"], df["match_score"] = zip(*df.AOI.apply(get_match, choices=file_AOIs))
     return df.sort_values(by="match_score")
+
 
 def run_all_sequential():
     df = load_AOIs()
     for f in df.iterrows():
         print(f)
         process_file(f)
+
 
 def run_all_parallel():
     df = load_AOIs()
@@ -201,5 +221,5 @@ def run_all_parallel():
 
 
 if __name__ == "__main__":
-    #run_all_sequential()
+    # run_all_sequential()
     run_all_parallel()
