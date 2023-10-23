@@ -5,3 +5,6 @@ shapely
 tqdm
 scikit-learn
 rapidfuzz
+folium
+mapclassify
+matplotlib

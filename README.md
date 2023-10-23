@@ -3,6 +3,10 @@ This contains codes for different shoreline projection formulas and methodologie
 
 ### Installation
 
+`conda install --yes --file requirements.txt`
+
+or
+
 `pip install -r requirements.txt`
 
 ### Usage
