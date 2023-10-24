@@ -110,11 +110,11 @@ def predict(
                 X = Prop * (B_Height + C_Depth)
                 Y = Length_AP / X
                 Z = (Proj_SLR - Historic_SLR) * Y
-                slope += Z
+                slope -= Z
             elif model == "Sunamara":
                 X = C_Depth / (slope + Length_AP)
                 Y = (Proj_SLR - Historic_SLR) / X
-                slope += Y
+                slope -= Y
 
             predicted_distance = slope * (FUTURE_YEAR - BASE_YEAR) + intercept
             distance_difference = latest_row.Distance - predicted_distance
