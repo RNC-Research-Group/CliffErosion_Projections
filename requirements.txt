@@ -9,3 +9,4 @@ folium
 mapclassify
 matplotlib
 xyzservices
+jupyter-autotime
