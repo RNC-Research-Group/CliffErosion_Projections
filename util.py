@@ -115,6 +115,8 @@ def predict(
                 X = C_Depth / (slope + Length_AP)
                 Y = (Proj_SLR - Historic_SLR) / X
                 slope -= Y
+            else:
+                raise ValueError(f"Unsupported model: {model}")
 
             predicted_distance = slope * (FUTURE_YEAR - BASE_YEAR) + intercept
             distance_difference = latest_row.Distance - predicted_distance
