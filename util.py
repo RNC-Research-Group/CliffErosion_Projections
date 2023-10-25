@@ -172,7 +172,10 @@ def process_file(index_and_row):
             results.set_geometry(f"{model}_model_point", inplace=True, crs=2193)
             polygon = prediction_results_to_polygon(results)
             os.makedirs("Projected_Shoreline_Polygons", exist_ok=True)
-            output_shapefile = f"Projected_Shoreline_Polygons/{site}_{model}_{SLR_rate_column_name}.shp"
+            if model == "linear":
+                output_shapefile = f"Projected_Shoreline_Polygons/{site}_{model}.shp"
+            else:
+                output_shapefile = f"Projected_Shoreline_Polygons/{site}_{model}_{SLR_rate_column_name}.shp"
             polygon.to_file(output_shapefile, driver="ESRI Shapefile")
 
 
