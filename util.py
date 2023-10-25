@@ -111,7 +111,7 @@ def predict(
                 Y = Length_AP / X
                 Z = (Proj_SLR - Historic_SLR) * Y
                 slope -= Z
-            elif model == "Sunamara":
+            elif model == "Sunamura":
                 X = C_Depth / (slope + Length_AP)
                 Y = (Proj_SLR - Historic_SLR) / X
                 slope -= Y
