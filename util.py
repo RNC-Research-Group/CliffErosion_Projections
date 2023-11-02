@@ -37,11 +37,42 @@ def calculate_new_coordinates(old_x, old_y, bearing, distance):
     bearing_radians = math.radians(bearing)
     new_x = old_x + (distance * math.sin(bearing_radians))
     new_y = old_y + (distance * math.cos(bearing_radians))
-    return Point(new_x, new_y)
+    point = Point(new_x, new_y)
+    assert not point.is_empty
+    return point
 
+
+def fit(df: pd.DataFrame, transect_metadata: dict):
+    """_summary_
+
+    Fits linear models for each transect, returns slopes and intercepts
+
+    Args:
+        df (pd.DataFrame): dataframe with columns: TransectID, Date, Distance, YearsSinceBase
+        transect_metadata (dict): dict lookup of TransectID to Azimuth & group
+
+    Returns:
+        dict: dict lookup of TransectID to linear model
+    """
+    grouped = df.groupby("TransectID")
+    results = []
+    for group_name, group_data in grouped:
+        if group_name not in transect_metadata.keys():
+            continue
+        linear_model = LinearRegression().fit(
+            group_data.YearsSinceBase.to_numpy().reshape(-1, 1), group_data.Distance
+        )
+        results.append({
+            "TransectID": group_name,
+            "slope": linear_model.coef_[0],
+            "intercept": linear_model.intercept_,
+            "group": transect_metadata[group_name]["group"],
+        })
+    return pd.DataFrame(results)
 
 def predict(
     df: pd.DataFrame,
+    linear_models: pd.DataFrame,
     transect_metadata: dict,
     Historic_SLR=0.002,
     Proj_SLR=0.01,
@@ -54,6 +85,7 @@ def predict(
 
     Args:
         df (pd.DataFrame): dataframe with columns: TransectID, Date, Distance, YearsSinceBase
+        linear_models (pd.DataFrame): dataframe with columns: TransectID, slope, intercept
         transect_metadata (dict): dict lookup of TransectID to Azimuth & group
         Historic_SLR (float, optional): Historic Sea Level Rise, only used for the SQRT, BH and Sunamura models. Defaults to 0.002.
         Proj_SLR (float, optional): Projected Sea Level Rise, only used for the SQRT, BH and Sunamura models. Defaults to 0.01.
@@ -68,37 +100,27 @@ def predict(
     Returns:
         pd.DataFrame: resulting prediction points for the year 2100
     """
-    grouped = df.groupby("TransectID")
     results = []
-    for group_name, group_data in grouped:
-        if group_name not in transect_metadata.keys():
-            continue
-        linear_model = LinearRegression().fit(
-            group_data.YearsSinceBase.to_numpy().reshape(-1, 1), group_data.Distance
-        )
-        slope = linear_model.coef_[0]
-        intercept = linear_model.intercept_
-        # Erosion only
-        if slope > 0:
-            continue
-
-        latest_row = group_data[group_data.Date == group_data["Date"].max()].iloc[0]
+    for i, row in linear_models.iterrows():
+        transect_ID = row.TransectID
+        transect_df = df[df.TransectID == transect_ID]
+        latest_row = transect_df[transect_df.Date == transect_df["Date"].max()].iloc[0]
         result = {
-            "TransectID": group_name,
+            "TransectID": transect_ID,
             "BaselineID": latest_row.BaselineID,
-            "group": transect_metadata[group_name]["group"],
+            "group": row.group,
             "Year": FUTURE_YEAR,
             "ocean_point": calculate_new_coordinates(
                 latest_row.geometry.x,
                 latest_row.geometry.y,
-                transect_metadata[group_name]["Azimuth"] + 180,
+                transect_metadata[transect_ID]["Azimuth"] + 180,
                 500,
             ),
         }
 
         for model in SUPPORTED_MODELS:
-            slope = linear_model.coef_[0]
-            intercept = linear_model.intercept_
+            slope = row.slope
+            intercept = row.intercept
             if model == "linear":
                 pass
             elif model == "sqrt":
@@ -123,7 +145,7 @@ def predict(
             result[f"{model}_model_point"] = calculate_new_coordinates(
                 latest_row.geometry.x,
                 latest_row.geometry.y,
-                transect_metadata[group_name]["Azimuth"],
+                transect_metadata[transect_ID]["Azimuth"],
                 distance_difference,
             )
         results.append(result)
@@ -154,7 +176,7 @@ def get_transect_metadata(transect_lines_shapefile: str):
     return metadata
 
 
-def process_file(index_and_row):
+def process_file(index_and_row, moving_average=True):
     i, row = index_and_row
 
     SLR_rate_column_names = row.index[row.index.str.startswith("Rate SSP")]
@@ -164,12 +186,19 @@ def process_file(index_and_row):
     gdf.crs = 2193
     gdf = enrich_df(gdf)
     transect_metadata = get_transect_metadata(f"Shapefiles/{site}_TransectLines.shp")
+    linear_models = fit(gdf, transect_metadata)
+    # Erosion only
+    linear_models.loc[linear_models.slope > 0, "slope"] = pd.NA
+    if moving_average:
+        rolled_slopes = linear_models.groupby("group").slope.rolling(10, min_periods=1).mean().dropna().reset_index(level=0)
+        linear_models.slope = rolled_slopes.slope
+    linear_models.dropna(inplace=True)
     if site == "ManaBayCliffs":
         print("Flipping")
         for k, v in transect_metadata.items():
             transect_metadata[k]["Azimuth"] = v["Azimuth"] + 180
     for SLR_rate_column_name in SLR_rate_column_names:
-        results = predict(gdf, transect_metadata, Proj_SLR=row[SLR_rate_column_name])
+        results = predict(gdf, linear_models, transect_metadata, Proj_SLR=row[SLR_rate_column_name])
         for model in SUPPORTED_MODELS:
             results.set_geometry(f"{model}_model_point", inplace=True, crs=2193)
             polygon = prediction_results_to_polygon(results)
@@ -213,11 +242,10 @@ def load_AOIs():
     return df.sort_values(by="match_score")
 
 
-def run_all_sequential():
+def run_all_sequential(moving_average=True):
     df = load_AOIs()
     for f in df.iterrows():
-        print(f)
-        process_file(f)
+        process_file(f, moving_average=moving_average)
 
 
 def run_all_parallel():
@@ -227,5 +255,5 @@ def run_all_parallel():
 
 
 if __name__ == "__main__":
-    # run_all_sequential()
+    # run_all_sequential(moving_average=True)
     run_all_parallel()
