@@ -35,4 +35,4 @@ jobs:
           git commit -m "Render notebooks to HTML"
 
       - name: Push HTML changes to gh-pages
-        run: git subtree push --prefix build origin gh-pages
+        run: git subtree push -f --prefix build origin gh-pages
