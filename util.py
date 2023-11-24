@@ -105,11 +105,12 @@ def predict(
         transect_ID = row.TransectID
         transect_df = df[df.TransectID == transect_ID]
         latest_row = transect_df[transect_df.Date == transect_df["Date"].max()].iloc[0]
+        future_year = int(row.get("FUTURE_YEAR", FUTURE_YEAR))
         result = {
             "TransectID": transect_ID,
             "BaselineID": latest_row.BaselineID,
             "group": row.group,
-            "Year": FUTURE_YEAR,
+            "Year": future_year,
             "ocean_point": calculate_new_coordinates(
                 latest_row.geometry.x,
                 latest_row.geometry.y,
@@ -140,7 +141,7 @@ def predict(
             else:
                 raise ValueError(f"Unsupported model: {model}")
 
-            predicted_distance = slope * (FUTURE_YEAR - BASE_YEAR) + intercept
+            predicted_distance = slope * (future_year - BASE_YEAR) + intercept
             distance_difference = latest_row.Distance - predicted_distance
             result[f"{model}_model_point"] = calculate_new_coordinates(
                 latest_row.geometry.x,
