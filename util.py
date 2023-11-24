@@ -149,6 +149,7 @@ def predict(
                 transect_metadata[transect_ID]["Azimuth"],
                 distance_difference,
             )
+            result[f"{model}_model_distance"] = distance_difference
         results.append(result)
     results = gpd.GeoDataFrame(results)
     return results
