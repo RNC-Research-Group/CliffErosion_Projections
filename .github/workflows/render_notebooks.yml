@@ -1,0 +1,38 @@
+name: Render and Commit HTML
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  render_and_commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+
+      - name: Install dependencies
+        run: pip install nbconvert
+
+      - name: Render Notebooks to HTML
+        run: |
+          find . -name "*.ipynb" -print0 | while IFS= read -r -d '' notebook; do
+            jupyter nbconvert --to html --output-dir build "$notebook"
+          done
+          touch build/.nojekyll
+
+      - name: Commit HTML changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -f build
+          git commit -m "Render notebooks to HTML"
+
+      - name: Push HTML changes to gh-pages
+        run: git subtree push --prefix build origin gh-pages
