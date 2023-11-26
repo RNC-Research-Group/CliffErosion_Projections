@@ -210,6 +210,7 @@ def process_file(index_and_row, moving_average=True):
             else:
                 output_shapefile = f"Projected_Shoreline_Polygons/{site}_{model}_{SLR_rate_column_name}.shp"
             polygon.to_file(output_shapefile, driver="ESRI Shapefile")
+        results.to_csv(f"Projected_Shoreline_Polygons/{site}_{SLR_rate_column_name}_results.csv", index=False)
 
 
 def fuzz_preprocess(filename):
