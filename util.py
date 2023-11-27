@@ -142,7 +142,9 @@ def predict(
                 raise ValueError(f"Unsupported model: {model}")
 
             years_until_future = future_year - BASE_YEAR - latest_row.YearsSinceBase
-            predicted_erosion = abs(slope * years_until_future + intercept)
+            predicted_erosion = -(slope * years_until_future + intercept)
+            if predicted_erosion < 0:
+                print(f"Negative erosion for {transect_ID} {model} {predicted_erosion}")
             result[f"{model}_model_point"] = calculate_new_coordinates(
                 latest_row.geometry.x,
                 latest_row.geometry.y,
@@ -258,5 +260,5 @@ def run_all_parallel():
 
 
 if __name__ == "__main__":
-    # run_all_sequential(moving_average=True)
-    run_all_parallel()
+    run_all_sequential(moving_average=True)
+    # run_all_parallel()
