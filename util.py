@@ -62,11 +62,13 @@ def fit(df: pd.DataFrame, transect_metadata: dict):
         linear_model = LinearRegression().fit(
             group_data.YearsSinceBase.to_numpy().reshape(-1, 1), group_data.Distance
         )
+        score = linear_model.score(group_data.YearsSinceBase.to_numpy().reshape(-1, 1), group_data.Distance)
         results.append({
             "TransectID": group_name,
             "slope": linear_model.coef_[0],
             "intercept": linear_model.intercept_,
             "group": transect_metadata[group_name]["group"],
+            "r2_score": score
         })
     return pd.DataFrame(results)
 
