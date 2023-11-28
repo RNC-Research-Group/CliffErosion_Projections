@@ -141,17 +141,17 @@ def predict(
             else:
                 raise ValueError(f"Unsupported model: {model}")
 
-            years_until_future = future_year - BASE_YEAR - latest_row.YearsSinceBase
-            predicted_erosion = abs(slope * years_until_future + intercept)
-            if predicted_erosion < 0:
-                print(f"Negative erosion for {transect_ID} {model} {predicted_erosion}")
+            predicted_distance = slope * (future_year - BASE_YEAR) + intercept
+            distance_difference = latest_row.Distance - predicted_distance
+            if distance_difference < 0:
+                distance_difference = 0
             result[f"{model}_model_point"] = calculate_new_coordinates(
                 latest_row.geometry.x,
                 latest_row.geometry.y,
                 transect_metadata[transect_ID]["Azimuth"],
-                predicted_erosion,
+                distance_difference,
             )
-            result[f"{model}_model_distance"] = predicted_erosion
+            result[f"{model}_model_distance"] = distance_difference
         results.append(result)
     results = gpd.GeoDataFrame(results)
     return results
