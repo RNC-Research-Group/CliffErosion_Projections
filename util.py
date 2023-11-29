@@ -11,6 +11,7 @@ from tqdm.contrib.concurrent import process_map
 import rapidfuzz  # Fuzzy string matching
 import os
 import warnings
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 
 warnings.filterwarnings(
     "ignore", message="CRS not set for some of the concatenation inputs"
@@ -59,16 +60,19 @@ def fit(df: pd.DataFrame, transect_metadata: dict):
     for group_name, group_data in grouped:
         if group_name not in transect_metadata.keys():
             continue
-        linear_model = LinearRegression().fit(
-            group_data.YearsSinceBase.to_numpy().reshape(-1, 1), group_data.Distance
-        )
-        score = linear_model.score(group_data.YearsSinceBase.to_numpy().reshape(-1, 1), group_data.Distance)
+        x = group_data.YearsSinceBase.to_numpy().reshape(-1, 1)
+        y = group_data.Distance
+        linear_model = LinearRegression().fit(x, y)
+        pred = linear_model.predict(x)
         results.append({
             "TransectID": group_name,
             "slope": linear_model.coef_[0],
             "intercept": linear_model.intercept_,
             "group": transect_metadata[group_name]["group"],
-            "r2_score": score
+            "r2_score": r2_score(y, pred),
+            "mae": mean_absolute_error(y, pred),
+            "mse": mean_squared_error(y, pred),
+            "rmse": mean_squared_error(y, pred, squared=False)
         })
     return pd.DataFrame(results)
 
@@ -108,7 +112,8 @@ def predict(
         transect_df = df[df.TransectID == transect_ID]
         latest_row = transect_df[transect_df.Date == transect_df["Date"].max()].iloc[0]
         future_year = int(row.get("FUTURE_YEAR", FUTURE_YEAR))
-        result = {
+        result = row.to_dict()
+        result.update({
             "TransectID": transect_ID,
             "BaselineID": latest_row.BaselineID,
             "group": row.group,
@@ -119,7 +124,7 @@ def predict(
                 transect_metadata[transect_ID]["Azimuth"] + 180,
                 500,
             ),
-        }
+        })
 
         for model in SUPPORTED_MODELS:
             slope = row.slope
