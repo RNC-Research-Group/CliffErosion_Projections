@@ -185,7 +185,7 @@ def get_transect_metadata(transect_lines_shapefile: str):
     return metadata
 
 
-def process_file(index_and_row, moving_average=True):
+def process_file(index_and_row, moving_average=True, fix_accretion=False):
     i, row = index_and_row
 
     SLR_rate_column_names = row.index[row.index.str.startswith("Rate SSP")]
@@ -208,6 +208,8 @@ def process_file(index_and_row, moving_average=True):
             transect_metadata[k]["Azimuth"] = v["Azimuth"] + 180
     for SLR_rate_column_name in SLR_rate_column_names:
         results = predict(gdf, linear_models, transect_metadata, Proj_SLR=row[SLR_rate_column_name])
+        if fix_accretion:
+            results = results[results.linear_model_distance >= 0]
         for model in SUPPORTED_MODELS:
             results.set_geometry(f"{model}_model_point", inplace=True, crs=2193)
             polygon = prediction_results_to_polygon(results)
