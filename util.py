@@ -156,6 +156,7 @@ def predict(
                 transect_metadata[transect_ID]["Azimuth"],
                 distance_difference,
             )
+            result[f"{model}_model_predicted_distance"] = predicted_distance
             result[f"{model}_model_distance"] = distance_difference
         results.append(result)
     results = gpd.GeoDataFrame(results)
@@ -196,6 +197,7 @@ def process_file(index_and_row, moving_average=True, fix_accretion=False):
     gdf = enrich_df(gdf)
     transect_metadata = get_transect_metadata(f"Shapefiles/{site}_TransectLines.shp")
     linear_models = fit(gdf, transect_metadata)
+    linear_models["original_slope"] = linear_models.slope
     # Erosion only
     linear_models.loc[linear_models.slope > 0, "slope"] = pd.NA
     if moving_average:
