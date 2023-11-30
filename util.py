@@ -150,8 +150,6 @@ def predict(
 
             predicted_distance = slope * (future_year - BASE_YEAR) + intercept
             distance_difference = latest_row.Distance - predicted_distance
-            if (future_year > latest_row.Year) and (distance_difference < 0):
-                distance_difference = 0
             result[f"{model}_model_point"] = calculate_new_coordinates(
                 latest_row.geometry.x,
                 latest_row.geometry.y,
