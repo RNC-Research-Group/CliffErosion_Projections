@@ -10,3 +10,5 @@ mapclassify
 matplotlib
 xyzservices
 jupyter-autotime
+openpyxl
+ipywidgets
