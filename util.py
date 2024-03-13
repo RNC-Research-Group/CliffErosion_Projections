@@ -24,7 +24,7 @@ SUPPORTED_MODELS = ["linear", "sqrt", "BH", "Sunamura"]
 
 
 def enrich_df(df: pd.DataFrame):
-    df["Date"] = pd.to_datetime(df.ShorelineID, dayfirst=True)
+    df["Date"] = pd.to_datetime(df.ShorelineI, dayfirst=True)
     df["Year"] = df.Date.dt.year
     df["YearsSinceBase"] = (df.Date - pd.Timestamp(BASE_YEAR, 1, 1)).dt.days / 365.25
     df["YearsUntilFuture"] = (
