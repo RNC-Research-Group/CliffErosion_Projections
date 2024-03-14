@@ -1,8 +1,0 @@
-DSAS v6 Sample Data
-
-Cape Canaveral area, Florida, USA
-
-Subset of shoreline data from:
-Kratzmann, M.G., Farris, A.S., Weber, K.M., Henderson, R.E., and Himmelstoss, E.A., 2021, USGS national shoreline change-A GIS compilation of updated vector shorelines (1800s - 2010s) and associated shoreline change data for the Georgia and Florida Coasts: U.S. Geological Survey data release, https://doi.org/10.5066/P9J3CVN4.
-
-https://www.sciencebase.gov/catalog/item/614a2860d34e0df5fb96ff95
