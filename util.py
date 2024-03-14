@@ -17,6 +17,8 @@ warnings.filterwarnings(
     "ignore", message="CRS not set for some of the concatenation inputs"
 )
 warnings.filterwarnings("ignore", message="invalid value encountered in distance")
+warnings.filterwarnings("ignore", message="'squared' is deprecated in version 1.4 and will be removed in 1.6")
+warnings.filterwarnings("ignore", message="R^2 score is not well-defined with less than two samples")
 
 BASE_YEAR = 1940
 FUTURE_YEAR = 2100
