@@ -181,11 +181,11 @@ def prediction_results_to_polygon(results: gpd.GeoDataFrame):
 def get_transect_metadata(transect_lines_shapefile: str):
     lines = gpd.read_file(transect_lines_shapefile)
     if "TransectID" in lines.columns:
-        lines.set_index("TransectID").sort_index()
+        lines = lines.set_index("TransectID").sort_index()
     else:
-        lines.set_index("TransOrder").sort_index()
+        lines = lines.set_index("TransOrder").sort_index()
     lines["dist_to_neighbour"] = lines.distance(lines.shift(-1))
-    breakpoints = lines.dist_to_neighbour[lines.dist_to_neighbour > 11]
+    breakpoints = lines.dist_to_neighbour[lines.dist_to_neighbour > 105]
     lines["group"] = pd.Series(range(len(breakpoints)), index=breakpoints.index)
     lines["group"] = lines.group.bfill().fillna(len(breakpoints)).astype(int)
     metadata = lines[["Azimuth", "group"]].to_dict(orient="index")
