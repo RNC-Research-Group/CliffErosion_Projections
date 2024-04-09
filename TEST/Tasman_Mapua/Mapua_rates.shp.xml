@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en"><Esri><CreaDate>20240409</CreaDate><CreaTime>10374100</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Conversion Tools.tbx\JSONToFeatures" Date="20240409" Time="103741">JSONToFeatures Z:\DSAS\Region\Tasman\Mapua\Transects2_rates_20240409_103518.geojson Z:\DSAS\Region\Tasman\Mapua\Mapua_rates.shp Polyline</Process></lineage></DataProperties></Esri></metadata>
