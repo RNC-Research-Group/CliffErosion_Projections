@@ -110,7 +110,7 @@ def predict(
     """
     results = []
     for i, row in linear_models.iterrows():
-        transect_ID = row.TransectID
+        transect_ID = row.TransectId
         transect_df = df[df.TransectID == transect_ID]
         latest_row = transect_df[transect_df.Date == transect_df["Date"].max()].iloc[0]
         future_year = int(row.get("FUTURE_YEAR", FUTURE_YEAR))
