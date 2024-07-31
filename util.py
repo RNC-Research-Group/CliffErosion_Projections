@@ -47,7 +47,7 @@ def calculate_new_coordinates(old_x, old_y, bearing, distance):
 
 from rapidfuzz import process, fuzz
 choices = ["TransectID"]
-process.extractOne ("TransectID", choices, scorer=fuzz.Wratio)
+process.extractOne ("TransectID", choices)
 
 def fit(df: pd.DataFrame, transect_metadata: dict):
     """_summary_
