@@ -9,6 +9,7 @@ from shapely.geometry import Point, Polygon
 from tqdm.auto import tqdm
 from tqdm.contrib.concurrent import process_map
 import rapidfuzz  # Fuzzy string matching
+from rapidfuzz import process, fuzz
 import os
 import warnings
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
@@ -44,6 +45,9 @@ def calculate_new_coordinates(old_x, old_y, bearing, distance):
     assert not point.is_empty
     return point
 
+from rapidfuzz import process, fuzz
+choices = ["TransectID"]
+process.extractOne ("TransectID", choices, scorer=fuzz.Wratio)
 
 def fit(df: pd.DataFrame, transect_metadata: dict):
     """_summary_
@@ -242,7 +246,7 @@ def fuzz_preprocess(filename):
     # Basename only
     filename = os.path.basename(filename)
     return filename
-    
+
 
 def get_match(filename, choices):
     match, score, index = rapidfuzz.process.extractOne(
