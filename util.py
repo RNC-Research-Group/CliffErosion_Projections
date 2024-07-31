@@ -57,7 +57,7 @@ def fit(df: pd.DataFrame, transect_metadata: dict):
     Returns:
         dict: dict lookup of TransectID to linear model
     """
-    grouped = df.groupby("TransectId")
+    grouped = df.groupby("TransectID")
     results = []
     for group_name, group_data in grouped:
         if group_name not in transect_metadata.keys():
@@ -67,7 +67,7 @@ def fit(df: pd.DataFrame, transect_metadata: dict):
         linear_model = LinearRegression().fit(x, y)
         pred = linear_model.predict(x)
         results.append({
-            "TransectId": group_name,
+            "TransectID": group_name,
             "slope": linear_model.coef_[0],
             "intercept": linear_model.intercept_,
             "group": transect_metadata[group_name]["group"],
@@ -110,7 +110,7 @@ def predict(
     """
     results = []
     for i, row in linear_models.iterrows():
-        transect_ID = row.TransectId
+        transect_ID = row.TransectID
         transect_df = df[df.TransectID == transect_ID]
         latest_row = transect_df[transect_df.Date == transect_df["Date"].max()].iloc[0]
         future_year = int(row.get("FUTURE_YEAR", FUTURE_YEAR))
