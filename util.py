@@ -242,7 +242,7 @@ def fuzz_preprocess(filename):
     # Basename only
     filename = os.path.basename(filename)
     return filename
-
+    
 
 def get_match(filename, choices):
     match, score, index = rapidfuzz.process.extractOne(
