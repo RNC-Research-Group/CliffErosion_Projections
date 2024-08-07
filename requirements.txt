@@ -12,3 +12,4 @@ xyzservices
 jupyter-autotime
 openpyxl
 ipywidgets
+shapelysmooth
