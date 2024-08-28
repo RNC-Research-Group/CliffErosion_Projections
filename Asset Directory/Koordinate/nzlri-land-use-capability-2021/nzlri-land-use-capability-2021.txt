@@ -1,0 +1,163 @@
+========================================================================
+ NZLRI Land Use Capability 2021
+------------------------------------------------------------------------
+ https://lris.scinfo.org.nz/layer/48076-nzlri-land-use-capability-2021/
+========================================================================
+From: Landcare Research
+
+Description:
+  The New Zealand Land Resource Inventory (NZLRI) is a national database of
+  physical land resource information. It comprises two sets of data compiled using
+  stereo aerial photography, published and unpublished reference material, and
+  extensive field work:
+  
+  1. An inventory of five physical factors (rock type, soil, slope, present type
+  and severity of erosion, and vegetation). A 'homogeneous unit area' approach is
+  used to record the five physical factors simultaneously to a level of detail
+  appropriate for presentation at a scale of 1:50,000.
+  2. A Land Use Capability (LUC) rating of the ability of each polygon to sustain
+  agricultural production, based on an assessment of the inventory factors above,
+  climate, the effects of past land use, and the potential for erosion. The NZLRI
+  covers the country in 11 regions, each with a separate LUC classification.
+  
+  The first edition NZLRI provides national coverage from mapping between 1973 and
+  1979 at a scale of 1:63,360. A limited revision regional upgrade of the north
+  Waikato area was completed at a scale of 1:63,360 in 1983. Second edition NZLRI
+  regional upgrades at a scale of 1:50,000 have been completed for Northland,
+  Wellington, Marlborough and Gisborne-East Cape. Third edition NZLRI layers
+  contained a restructured polygon attribute table to allow the core NZLRI to
+  complement the newly created fundamental soil layers with minimal duplication.
+  
+  Update of Edition 3 NZLRI. This update involves ++**no new mapping**++, but does
+  include a ++**new National Land Use Capability legend**++ correlated for all
+  regions across New Zealand. Attributes include original LUC units codes and unit
+  descriptions so that users more familiar with original regional codes and North
+  Island correlations can track the pedigree of units from old to new codes and
+  descriptions.
+
+Region: New Zealand
+
+Category: Land management & planning
+
+CRS: NZGD2000 / New Zealand Transverse Mercator 2000
+
+------------------------------------------------------------------------
+ Processing steps applied by LRIS Portal
+------------------------------------------------------------------------
+
+- imported to LRIS Portal in Shapefile format on 22 Jun 2010
+- updated with new data on 20 Dec 2021
+- 102 invalid geometries fixed at import time 
+    (see https://lris.scinfo.org.nz/layer/48076-nzlri-land-use-capability-2021/history/)
+- converted by LRIS Portal to Shapefile on 21 Mar 2024 (reference #3443421)
+
+------------------------------------------------------------------------
+ LICENSE: Landcare Data Use License 
+ Link: https://lris.scinfo.org.nz/license/landcare-data-use-licence-v1/
+------------------------------------------------------------------------
+
+  LICENSE RELATING TO THE USE OF DATA
+  =========================
+  
+  PARTIES
+  -------
+  
+  (1)  Landcare Research New Zealand Limited (“Landcare Research”)
+  
+  (2)  The individual who accesses the data, or the entity on whose behalf an individual accesses the data, as the case may be (the “User”)
+  
+  TERMS OF LICENSE
+  ----------------
+  
+  1.    Definitions 
+  ---
+  
+  1.1 In this license: 
+  
+  (a) “Data” means data made available from the Portal or associated Web Services.
+  
+  (b) “Portal” means the internet portal known as the Land Resource Information System or LRIS portal.  
+  
+  (c) “Web Service” means the Web Feature Service or any other API provided by the Land Resource Information System portal.
+  
+  2.	License to the User
+  ---
+  
+  2.1	Landcare Research grants the User a license to:
+  
+  (a)	View, download, use and copy the Data;
+  
+  (b)	Incorporate the Data into one or more datasets; and
+  
+  (c)	Create derivative works from the Data;
+  
+  subject to the terms and conditions of this license.
+  
+  2.2	The User may not:
+  
+  (a)	Provide or transfer the Data including derivatives to third parties, whether in return for a fee or other consideration or otherwise;
+  
+  (b)	Use the Data or derivatives for any unlawful purpose;
+  
+  (c)	Represent, whether expressly or implicitly, that Landcare Research endorses the User or its use of the Data;
+  
+  2.3	The User shall:
+  
+  Acknowledge the source of the Data on all material in which the Data is used (whether in whole or in part, including in all derivative works) by including the following statement on material in which the Data is used (whether electronic or otherwise):  
+  
+  > "Data reproduced with the permission of Landcare Research New Zealand Limited"
+  
+  3.	Accuracy and reliability of Data 
+  ---
+  
+  3.1	The User acknowledges:
+  
+  (a)	Some of the Data may be inaccurate, incomplete and/or imprecise; 
+  
+  (b)	Landcare Research may alter, correct, modify or delete some or all Data made available on the Portal and is under no obligation to advise the User of such alteration, correction, modification or deletion;
+  
+  (c)	Landcare Research cannot and does not provide any warranties or representations regarding the accuracy, reliability or fitness for purpose of any Data or other material made available to the User; 
+  
+  (d)	The User uses the Data and any other material provided by Landcare Research at its own risk; and
+  
+  (e)	Landcare Research cannot and does not provide any warranties or representations that:
+  
+  (i)  The Data will be free from infection, virus or destructive code; or
+  
+  (ii)  The Data will be supplied in a form that can be readily accessed or used by the User.  
+  
+  4.	Intellectual property 
+  ---
+  
+  4.1	The User’s access to and use of Data does not transfer any intellectual property rights to you in relation to that Data. 
+  
+  4.2	Landcare Research will not claim ownership of any new intellectual property rights that the User may create from its use of the Data.
+  
+  5.	Retention of license
+  ---
+  
+  5.1	Where this license is included in Data downloaded by the User, the User shall not remove, alter or modify the license and shall keep it with the downloaded Data. 
+  
+  6.	Exclusion of liability
+  ---
+  
+  6.1	In no event shall Landcare Research be liable (whether in contract, tort including negligence or otherwise) for any direct, indirect, incidental, special, or consequential damages or damages for loss of profits, revenue, costs or damages incurred by the User. In the event that this clause does not apply to a particular claim or, Landcare Research’s maximum cumulative liability to the User shall in no event exceed NZ$100.
+  
+  7.	Indemnity
+  ---
+  
+  7.1	The User shall indemnify and hold harmless Landcare Research from all costs, expenses (including legal costs), damages and claims of any nature whatsoever arising from the User’s breach or alleged breach of this license.  
+  
+  8.	General
+  ---
+  
+  8.1	Assignment: The User may not sell, transfer, assign or sub-contract all or any part of its interest in this license without the express written consent of Landcare Research, For the purpose of this clause, “assign” includes a change in effective control of the User or its parent company. 
+  
+  8.2	Waiver:  No waiver of any breach of any term of this license shall be effective unless in writing signed by the party having the right to enforce such breach and no such waiver shall be construed as a waiver of any subsequent breach.
+  
+  8.3	Severance:  If any provision of this license is rendered void, illegal or unenforceable by any legislation or law to which it is subject, it shall be rendered void, illegal or unenforceable to that extent and no further.
+  
+  Last updated: 11 November 2015 v1.2
+  
+  
+
