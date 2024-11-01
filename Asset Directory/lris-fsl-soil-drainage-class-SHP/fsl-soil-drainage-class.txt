@@ -1,0 +1,149 @@
+========================================================================
+ FSL   Soil Drainage Class
+------------------------------------------------------------------------
+ https://lris.scinfo.org.nz/layer/48104-fsl-soil-drainage-class/
+========================================================================
+From: Landcare Research
+
+Description:
+  The New Zealand Fundamental Soil Layer originates from a relational join of
+  features from two databases: the New Zealand Land Resource Inventory (NZLRI),
+  and the National Soils Database (NSD). The NZLRI is a national polygon database
+  of physical land resource information, including a soil unit. Soil is one in an
+  inventory of five physical factors (including rock, slope, erosion, and
+  vegetation) delineated by physiographic polygons at approximately 1:50,000
+  scale. The NSD is a point database of soil physical, chemical, and mineralogical
+  characteristics for over 1500 soil profiles nationally. A relational join
+  between the NZLRI dominant soil and derivative tables from the NSD was the means
+  by which 14 important soil attributes were attached to the NZLRI polygons. Some
+  if these attributes originate from exact matches with NSD records, while others
+  derive from matches to similar soils or professional estimates. This layer
+  contains attributes relating to soil drainage. Soil drainage is described as a
+  class. Drainage classes are assessed using criteria of soil depth and duration
+  of water tables inferred from soil colours and mottles. Drainage classes used
+  here are the same as those used in the NZ Soil Classification (Hewitt 1993), and
+  outlined by Milne et al. (1995).
+
+Region: New Zealand
+
+Category: Soil water
+
+CRS: NZGD2000 / New Zealand Transverse Mercator 2000
+
+------------------------------------------------------------------------
+ Processing steps applied by LRIS Portal
+------------------------------------------------------------------------
+
+- imported to LRIS Portal in Shapefile format on 04 Jun 2010
+- converted by LRIS Portal to Shapefile on 31 Oct 2024 (reference #3726392)
+
+------------------------------------------------------------------------
+ LICENSE: Landcare Data Use License 
+ Link: https://lris.scinfo.org.nz/license/landcare-data-use-licence-v1/
+------------------------------------------------------------------------
+
+  LICENSE RELATING TO THE USE OF DATA
+  =========================
+  
+  PARTIES
+  -------
+  
+  (1)  Landcare Research New Zealand Limited (“Landcare Research”)
+  
+  (2)  The individual who accesses the data, or the entity on whose behalf an individual accesses the data, as the case may be (the “User”)
+  
+  TERMS OF LICENSE
+  ----------------
+  
+  1.    Definitions 
+  ---
+  
+  1.1 In this license: 
+  
+  (a) “Data” means data made available from the Portal or associated Web Services.
+  
+  (b) “Portal” means the internet portal known as the Land Resource Information System or LRIS portal.  
+  
+  (c) “Web Service” means the Web Feature Service or any other API provided by the Land Resource Information System portal.
+  
+  2.	License to the User
+  ---
+  
+  2.1	Landcare Research grants the User a license to:
+  
+  (a)	View, download, use and copy the Data;
+  
+  (b)	Incorporate the Data into one or more datasets; and
+  
+  (c)	Create derivative works from the Data;
+  
+  subject to the terms and conditions of this license.
+  
+  2.2	The User may not:
+  
+  (a)	Provide or transfer the Data including derivatives to third parties, whether in return for a fee or other consideration or otherwise;
+  
+  (b)	Use the Data or derivatives for any unlawful purpose;
+  
+  (c)	Represent, whether expressly or implicitly, that Landcare Research endorses the User or its use of the Data;
+  
+  2.3	The User shall:
+  
+  Acknowledge the source of the Data on all material in which the Data is used (whether in whole or in part, including in all derivative works) by including the following statement on material in which the Data is used (whether electronic or otherwise):  
+  
+  > "Data reproduced with the permission of Landcare Research New Zealand Limited"
+  
+  3.	Accuracy and reliability of Data 
+  ---
+  
+  3.1	The User acknowledges:
+  
+  (a)	Some of the Data may be inaccurate, incomplete and/or imprecise; 
+  
+  (b)	Landcare Research may alter, correct, modify or delete some or all Data made available on the Portal and is under no obligation to advise the User of such alteration, correction, modification or deletion;
+  
+  (c)	Landcare Research cannot and does not provide any warranties or representations regarding the accuracy, reliability or fitness for purpose of any Data or other material made available to the User; 
+  
+  (d)	The User uses the Data and any other material provided by Landcare Research at its own risk; and
+  
+  (e)	Landcare Research cannot and does not provide any warranties or representations that:
+  
+  (i)  The Data will be free from infection, virus or destructive code; or
+  
+  (ii)  The Data will be supplied in a form that can be readily accessed or used by the User.  
+  
+  4.	Intellectual property 
+  ---
+  
+  4.1	The User’s access to and use of Data does not transfer any intellectual property rights to you in relation to that Data. 
+  
+  4.2	Landcare Research will not claim ownership of any new intellectual property rights that the User may create from its use of the Data.
+  
+  5.	Retention of license
+  ---
+  
+  5.1	Where this license is included in Data downloaded by the User, the User shall not remove, alter or modify the license and shall keep it with the downloaded Data. 
+  
+  6.	Exclusion of liability
+  ---
+  
+  6.1	In no event shall Landcare Research be liable (whether in contract, tort including negligence or otherwise) for any direct, indirect, incidental, special, or consequential damages or damages for loss of profits, revenue, costs or damages incurred by the User. In the event that this clause does not apply to a particular claim or, Landcare Research’s maximum cumulative liability to the User shall in no event exceed NZ$100.
+  
+  7.	Indemnity
+  ---
+  
+  7.1	The User shall indemnify and hold harmless Landcare Research from all costs, expenses (including legal costs), damages and claims of any nature whatsoever arising from the User’s breach or alleged breach of this license.  
+  
+  8.	General
+  ---
+  
+  8.1	Assignment: The User may not sell, transfer, assign or sub-contract all or any part of its interest in this license without the express written consent of Landcare Research, For the purpose of this clause, “assign” includes a change in effective control of the User or its parent company. 
+  
+  8.2	Waiver:  No waiver of any breach of any term of this license shall be effective unless in writing signed by the party having the right to enforce such breach and no such waiver shall be construed as a waiver of any subsequent breach.
+  
+  8.3	Severance:  If any provision of this license is rendered void, illegal or unenforceable by any legislation or law to which it is subject, it shall be rendered void, illegal or unenforceable to that extent and no further.
+  
+  Last updated: 11 November 2015 v1.2
+  
+  
+
