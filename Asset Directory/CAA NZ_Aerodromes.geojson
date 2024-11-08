@@ -1,0 +1,5355 @@
+{
+  "type" : "FeatureCollection", 
+  "features" : [
+    {
+      "type" : "Feature", 
+      "id" : 1, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.373333333, -45.211666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 1, 
+        "Name" : "ALEXANDRA", 
+        "ICAO_Code" : "NZLX", 
+        "Latitude" : "451242S", 
+        "Longitude" : "1692224E", 
+        "Latitude_D" : -45.2116666667, 
+        "Longitude_" : 169.373333333, 
+        "Lat" : "45 12 42S", 
+        "Lon" : "169 22 24E", 
+        "Lat_D" : -45.2116666667, 
+        "Lon_D" : 169.373333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZLX"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 2, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          171.393938889, -43.793747222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 2, 
+        "Name" : "ANAMA", 
+        "ICAO_Code" : "NZAN", 
+        "Latitude" : "434737.49S", 
+        "Longitude" : "1712338.18E", 
+        "Latitude_D" : -43.7937472222, 
+        "Longitude_" : 171.393938889, 
+        "Lat" : "43 47 37.49S", 
+        "Lon" : "171 23 38.18E", 
+        "Lat_D" : -43.7937472222, 
+        "Lon_D" : 171.393938889, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZAN"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 3, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.973333333, -37.029722222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 3, 
+        "Name" : "ARDMORE", 
+        "ICAO_Code" : "NZAR", 
+        "Latitude" : "370147S", 
+        "Longitude" : "1745824E", 
+        "Latitude_D" : -37.0297222222, 
+        "Longitude_" : 174.973333333, 
+        "Lat" : "37 01 47S", 
+        "Lon" : "174 58 24E", 
+        "Lat_D" : -37.0297222222, 
+        "Lon_D" : 174.973333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZAR"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 4, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          171.796666667, -43.903333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 4, 
+        "Name" : "ASHBURTON", 
+        "ICAO_Code" : "NZAS", 
+        "Latitude" : "435412S", 
+        "Longitude" : "1714748E", 
+        "Latitude_D" : -43.9033333333, 
+        "Longitude_" : 171.796666667, 
+        "Lat" : "43 54 12S", 
+        "Lon" : "171 47 48E", 
+        "Lat_D" : -43.9033333333, 
+        "Lon_D" : 171.796666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZAS"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 5, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          171.747975, -43.8941861109999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 5, 
+        "Name" : "ASHBURTON MEDICAL CENTRE", 
+        "ICAO_Code" : "NZAM", 
+        "Latitude" : "435339.07S", 
+        "Longitude" : "1714452.71E", 
+        "Latitude_D" : -43.8941861111, 
+        "Longitude_" : 171.747975, 
+        "Lat" : "43 53 39.07S", 
+        "Lon" : "171 44 52.71E", 
+        "Lat_D" : -43.8941861111, 
+        "Lon_D" : 171.747975, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZAM"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 6, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.791666667, -37.0080555559999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 6, 
+        "Name" : "AUCKLAND", 
+        "ICAO_Code" : "NZAA", 
+        "Latitude" : "370029S", 
+        "Longitude" : "1744730E", 
+        "Latitude_D" : -37.0080555556, 
+        "Longitude_" : 174.791666667, 
+        "Lat" : "37 00 29S", 
+        "Lon" : "174 47 30E", 
+        "Lat_D" : -37.0080555556, 
+        "Lon_D" : 174.791666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZAA"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 7, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.763486111, -36.8339055559999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 7, 
+        "Name" : "AUCKLAND HARBOUR", 
+        "ICAO_Code" : "NZAW", 
+        "Latitude" : "365002.06S", 
+        "Longitude" : "1744548.55E", 
+        "Latitude_D" : -36.8339055556, 
+        "Longitude_" : 174.763486111, 
+        "Lat" : "36 50 02.06S", 
+        "Lon" : "174 45 48.55E", 
+        "Lat_D" : -36.8339055556, 
+        "Lon_D" : 174.763486111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZAW"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 8, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.768888889, -36.859166667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 8, 
+        "Name" : "AUCKLAND HOSPITAL", 
+        "ICAO_Code" : "NZJL", 
+        "Latitude" : "365133.0S", 
+        "Longitude" : "1744608.0E", 
+        "Latitude_D" : -36.8591666667, 
+        "Longitude_" : 174.768888889, 
+        "Lat" : "36 51 33.0S", 
+        "Lon" : "174 46 08.0E", 
+        "Lat_D" : -36.8591666667, 
+        "Lon_D" : 174.768888889, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJL"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 9, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.75, -46.243333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 9, 
+        "Name" : "BALCLUTHA", 
+        "ICAO_Code" : "NZBA", 
+        "Latitude" : "461436.0S", 
+        "Longitude" : "1694500.0E", 
+        "Latitude_D" : -46.2433333333, 
+        "Longitude_" : 169.75, 
+        "Lat" : "46 14 36.0S", 
+        "Lon" : "169 45 00.0E", 
+        "Lat_D" : -46.2433333333, 
+        "Lon_D" : 169.75, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZBA"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 10, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.069444444, -35.3869444439999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 10, 
+        "Name" : "BAY OF ISLANDS HOSPITAL", 
+        "ICAO_Code" : "NZJI", 
+        "Latitude" : "352313S", 
+        "Longitude" : "1740410E", 
+        "Latitude_D" : -35.3869444444, 
+        "Longitude_" : 174.069444444, 
+        "Lat" : "35 23 13S", 
+        "Lon" : "174 04 10E", 
+        "Lat_D" : -35.3869444444, 
+        "Lon_D" : 174.069444444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJI"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 11, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.686944444, -43.479722222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 11, 
+        "Name" : "BURWOOD HOSPITAL", 
+        "ICAO_Code" : "NZBW", 
+        "Latitude" : "432847.0S", 
+        "Longitude" : "1724113.0E", 
+        "Latitude_D" : -43.4797222222, 
+        "Longitude_" : 172.686944444, 
+        "Lat" : "43 28 47.0S", 
+        "Lon" : "172 41 13.0E", 
+        "Lat_D" : -43.4797222222, 
+        "Lon_D" : 172.686944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZBW"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 12, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.134722222, -38.6652777779999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 12, 
+        "Name" : "CENTENNIAL PARK", 
+        "ICAO_Code" : "NZCG", 
+        "Latitude" : "383955S", 
+        "Longitude" : "1760805E", 
+        "Latitude_D" : -38.6652777778, 
+        "Longitude_" : 176.134722222, 
+        "Lat" : "38 39 55S", 
+        "Lon" : "176 08 05E", 
+        "Lat_D" : -38.6652777778, 
+        "Lon_D" : 176.134722222, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZCG"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 13, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.311666667, -46.04
+        ]
+      }, 
+      "properties" : {
+        "FID" : 13, 
+        "Name" : "CENTRE BUSH", 
+        "ICAO_Code" : "NZCB", 
+        "Latitude" : "460224.0S", 
+        "Longitude" : "1681842.0E", 
+        "Latitude_D" : -46.04, 
+        "Longitude_" : 168.311666667, 
+        "Lat" : "46 02 24.0S", 
+        "Lon" : "168 18 42.0E", 
+        "Lat_D" : -46.04, 
+        "Lon_D" : 168.311666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZCB"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 14, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.534444444, -43.489444444
+        ]
+      }, 
+      "properties" : {
+        "FID" : 14, 
+        "Name" : "CHRISTCHURCH", 
+        "ICAO_Code" : "NZCH", 
+        "Latitude" : "432922S", 
+        "Longitude" : "1723204E", 
+        "Latitude_D" : -43.4894444444, 
+        "Longitude_" : 172.534444444, 
+        "Lat" : "43 29 22S", 
+        "Lon" : "172 32 04E", 
+        "Lat_D" : -43.4894444444, 
+        "Lon_D" : 172.534444444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZCH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 15, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.623891667, -43.5329416669999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 15, 
+        "Name" : "CHRISTCHURCH HOSPITAL", 
+        "ICAO_Code" : "NZJC", 
+        "Latitude" : "433158.59S", 
+        "Longitude" : "1723726.01E", 
+        "Latitude_D" : -43.5329416667, 
+        "Longitude_" : 172.623891667, 
+        "Lat" : "43 31 58.59S", 
+        "Lon" : "172 37 26.01E", 
+        "Lat_D" : -43.5329416667, 
+        "Lon_D" : 172.623891667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJC"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 16, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.621111111, -43.536944444
+        ]
+      }, 
+      "properties" : {
+        "FID" : 16, 
+        "Name" : "CHRISTCHURCH HOSPITAL HAGLEY", 
+        "ICAO_Code" : "NZJJ", 
+        "Latitude" : "433213S", 
+        "Longitude" : "1723716E", 
+        "Latitude_D" : -43.5369444444, 
+        "Longitude_" : 172.621111111, 
+        "Lat" : "43 32 13S", 
+        "Lon" : "172 37 16E", 
+        "Lat_D" : -43.5369444444, 
+        "Lon_D" : 172.621111111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJJ"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 17, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.014166667, -41.456111111
+        ]
+      }, 
+      "properties" : {
+        "FID" : 17, 
+        "Name" : "CLOUDY BAY", 
+        "ICAO_Code" : "NZCL", 
+        "Latitude" : "412722S", 
+        "Longitude" : "1740051E", 
+        "Latitude_D" : -41.4561111111, 
+        "Longitude_" : 174.014166667, 
+        "Lat" : "41 27 22S", 
+        "Lon" : "174 00 51E", 
+        "Lat_D" : -41.4561111111, 
+        "Lon_D" : 174.014166667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZCL"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 18, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.508611111, -36.791666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 18, 
+        "Name" : "COROMANDEL", 
+        "ICAO_Code" : "NZCX", 
+        "Latitude" : "364730.0S", 
+        "Longitude" : "1753031.0E", 
+        "Latitude_D" : -36.7916666667, 
+        "Longitude_" : 175.508611111, 
+        "Lat" : "36 47 30.0S", 
+        "Lon" : "175 30 31.0E", 
+        "Lat_D" : -36.7916666667, 
+        "Lon_D" : 175.508611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZCX"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 19, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.218333333, -44.98
+        ]
+      }, 
+      "properties" : {
+        "FID" : 19, 
+        "Name" : "CROMWELL", 
+        "ICAO_Code" : "NZCW", 
+        "Latitude" : "445848S", 
+        "Longitude" : "1691306E", 
+        "Latitude_D" : -44.98, 
+        "Longitude_" : 169.218333333, 
+        "Lat" : "44 58 48S", 
+        "Lon" : "169 13 06E", 
+        "Lat_D" : -44.98, 
+        "Lon_D" : 169.218333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZCW"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 20, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.170555556, -45.048611111
+        ]
+      }, 
+      "properties" : {
+        "FID" : 20, 
+        "Name" : "CROMWELL RACECOURSE", 
+        "ICAO_Code" : "NZCS", 
+        "Latitude" : "450255.0S", 
+        "Longitude" : "1691014.0E", 
+        "Latitude_D" : -45.0486111111, 
+        "Longitude_" : 169.170555556, 
+        "Lat" : "45 02 55.0S", 
+        "Lon" : "169 10 14.0E", 
+        "Lat_D" : -45.0486111111, 
+        "Lon_D" : 169.170555556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZCS"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 21, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.078611111, -40.228333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 21, 
+        "Name" : "DANNEVIRKE", 
+        "ICAO_Code" : "NZDV", 
+        "Latitude" : "401342.0S", 
+        "Longitude" : "1760443.0E", 
+        "Latitude_D" : -40.2283333333, 
+        "Longitude_" : 176.078611111, 
+        "Lat" : "40 13 42.0S", 
+        "Lon" : "176 04 43.0E", 
+        "Lat_D" : -40.2283333333, 
+        "Lon_D" : 176.078611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZDV"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 22, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.893611111, -35.9397222219999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 22, 
+        "Name" : "DARGAVILLE", 
+        "ICAO_Code" : "NZDA", 
+        "Latitude" : "355623.0S", 
+        "Longitude" : "1735337.0E", 
+        "Latitude_D" : -35.9397222222, 
+        "Longitude_" : 173.893611111, 
+        "Lat" : "35 56 23.0S", 
+        "Lon" : "173 53 37.0E", 
+        "Lat_D" : -35.9397222222, 
+        "Lon_D" : 173.893611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZDA"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 23, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.875555556, -35.9288888889999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 23, 
+        "Name" : "DARGAVILLE HOSPITAL", 
+        "ICAO_Code" : "NZJE", 
+        "Latitude" : "355544S", 
+        "Longitude" : "1735232E", 
+        "Latitude_D" : -35.9288888889, 
+        "Longitude_" : 173.875555556, 
+        "Lat" : "35 55 44S", 
+        "Lon" : "173 52 32E", 
+        "Lat_D" : -35.9288888889, 
+        "Lon_D" : 173.875555556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJE"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 24, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.975277778, -37.096388889
+        ]
+      }, 
+      "properties" : {
+        "FID" : 24, 
+        "Name" : "DRURY", 
+        "ICAO_Code" : "NZDY", 
+        "Latitude" : "370547S", 
+        "Longitude" : "1745831E", 
+        "Latitude_D" : -37.0963888889, 
+        "Longitude_" : 174.975277778, 
+        "Lat" : "37 05 47S", 
+        "Lon" : "174 58 31E", 
+        "Lat_D" : -37.0963888889, 
+        "Lon_D" : 174.975277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZDY"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 25, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.198333333, -45.9280555559999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 25, 
+        "Name" : "DUNEDIN", 
+        "ICAO_Code" : "NZDN", 
+        "Latitude" : "455541S", 
+        "Longitude" : "1701154E", 
+        "Latitude_D" : -45.9280555556, 
+        "Longitude_" : 170.198333333, 
+        "Lat" : "45 55 41S", 
+        "Lon" : "170 11 54E", 
+        "Lat_D" : -45.9280555556, 
+        "Lon_D" : 170.198333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZDN"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 26, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.508333333, -45.8833333329999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 26, 
+        "Name" : "DUNEDIN CITY", 
+        "ICAO_Code" : "NZDC", 
+        "Latitude" : "455300.0S", 
+        "Longitude" : "1703030.0E", 
+        "Latitude_D" : -45.8833333333, 
+        "Longitude_" : 170.508333333, 
+        "Lat" : "45 53 00.0S", 
+        "Lon" : "170 30 30.0E", 
+        "Lat_D" : -45.8833333333, 
+        "Lon_D" : 170.508333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZDC"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 27, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.509673583, -45.868869861
+        ]
+      }, 
+      "properties" : {
+        "FID" : 27, 
+        "Name" : "DUNEDIN HOSPITAL", 
+        "ICAO_Code" : "NZDH", 
+        "Latitude" : "455207.9315S", 
+        "Longitude" : "1703034.8249E", 
+        "Latitude_D" : -45.8688698611, 
+        "Longitude_" : 170.509673583, 
+        "Lat" : "45 52 07.9315S", 
+        "Lon" : "170 30 34.8249E", 
+        "Lat_D" : -45.8688698611, 
+        "Lon_D" : 170.509673583, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZDH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 28, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.331683333, -45.200933333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 28, 
+        "Name" : "DUNSTAN HOSPITAL", 
+        "ICAO_Code" : "NZDU", 
+        "Latitude" : "451203.36S", 
+        "Longitude" : "1691954.06E", 
+        "Latitude_D" : -45.2009333333, 
+        "Longitude_" : 169.331683333, 
+        "Lat" : "45 12 03.36S", 
+        "Lon" : "169 19 54.06E", 
+        "Lat_D" : -45.2009333333, 
+        "Lon_D" : 169.331683333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZDU"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 29, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.0775, -41.339722222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 29, 
+        "Name" : "EVES VALLEY", 
+        "ICAO_Code" : "NZEV", 
+        "Latitude" : "412023S", 
+        "Longitude" : "1730439E", 
+        "Latitude_D" : -41.3397222222, 
+        "Longitude_" : 173.0775, 
+        "Lat" : "41 20 23S", 
+        "Lon" : "173 04 39E", 
+        "Lat_D" : -41.3397222222, 
+        "Lon_D" : 173.0775, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZEV"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 30, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.605919444, -40.255927778
+        ]
+      }, 
+      "properties" : {
+        "FID" : 30, 
+        "Name" : "FEILDING", 
+        "ICAO_Code" : "NZFI", 
+        "Latitude" : "401521.34S", 
+        "Longitude" : "1753621.31E", 
+        "Latitude_D" : -40.2559277778, 
+        "Longitude_" : 175.605919444, 
+        "Lat" : "40 15 21.34S", 
+        "Lon" : "175 36 21.31E", 
+        "Lat_D" : -40.2559277778, 
+        "Lon_D" : 175.605919444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZFI"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 31, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.111666667, -46.895
+        ]
+      }, 
+      "properties" : {
+        "FID" : 31, 
+        "Name" : "FERN GULLY", 
+        "ICAO_Code" : "NZFG", 
+        "Latitude" : "465342S", 
+        "Longitude" : "1680642E", 
+        "Latitude_D" : -46.895, 
+        "Longitude_" : 168.111666667, 
+        "Lat" : "46 53 42S", 
+        "Lon" : "168 06 42E", 
+        "Lat_D" : -46.895, 
+        "Lon_D" : 168.111666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZFG"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 32, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.511666667, -43.3174999999999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 32, 
+        "Name" : "FERNSIDE FIELDS", 
+        "ICAO_Code" : "NZFE", 
+        "Latitude" : "431903S", 
+        "Longitude" : "1723042E", 
+        "Latitude_D" : -43.3175, 
+        "Longitude_" : 172.511666667, 
+        "Lat" : "43 19 03S", 
+        "Lon" : "172 30 42E", 
+        "Lat_D" : -43.3175, 
+        "Lon_D" : 172.511666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZFE"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 33, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.653333333, -39.895555556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 33, 
+        "Name" : "FLAT HILLS", 
+        "ICAO_Code" : "NZFL", 
+        "Latitude" : "395344.00S", 
+        "Longitude" : "1753912.00E", 
+        "Latitude_D" : -39.8955555556, 
+        "Longitude_" : 175.653333333, 
+        "Lat" : "39 53 44.00S", 
+        "Lon" : "175 39 12.00E", 
+        "Lat_D" : -39.8955555556, 
+        "Lon_D" : 175.653333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZFL"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 34, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.960277778, -41.243055556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 34, 
+        "Name" : "FLAT POINT", 
+        "ICAO_Code" : "NZFT", 
+        "Latitude" : "411435.0S", 
+        "Longitude" : "1755737.0E", 
+        "Latitude_D" : -41.2430555556, 
+        "Longitude_" : 175.960277778, 
+        "Lat" : "41 14 35.0S", 
+        "Lon" : "175 57 37.0E", 
+        "Lat_D" : -41.2430555556, 
+        "Lon_D" : 175.960277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZFT"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 35, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.360555556, -43.3858333329999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 35, 
+        "Name" : "FOREST FIELD", 
+        "ICAO_Code" : "NZFF", 
+        "Latitude" : "432309.0S", 
+        "Longitude" : "1722138.0E", 
+        "Latitude_D" : -43.3858333333, 
+        "Longitude_" : 172.360555556, 
+        "Lat" : "43 23 09.0S", 
+        "Lon" : "172 21 38.0E", 
+        "Lat_D" : -43.3858333333, 
+        "Lon_D" : 172.360555556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZFF"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 36, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.999722222, -43.463055556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 36, 
+        "Name" : "FOX", 
+        "ICAO_Code" : "NZFH", 
+        "Latitude" : "432747.0S", 
+        "Longitude" : "1695959.0E", 
+        "Latitude_D" : -43.4630555556, 
+        "Longitude_" : 169.999722222, 
+        "Lat" : "43 27 47.0S", 
+        "Lon" : "169 59 59.0E", 
+        "Lat_D" : -43.4630555556, 
+        "Lon_D" : 169.999722222, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZFH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 37, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.018991667, -43.4619222219999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 37, 
+        "Name" : "FOX GLACIER", 
+        "ICAO_Code" : "NZFO", 
+        "Latitude" : "432742.92S", 
+        "Longitude" : "1700108.37E", 
+        "Latitude_D" : -43.4619222222, 
+        "Longitude_" : 170.018991667, 
+        "Lat" : "43 27 42.92S", 
+        "Lon" : "170 01 08.37E", 
+        "Lat_D" : -43.4619222222, 
+        "Lon_D" : 170.018991667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZFO"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 38, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.001944444, -43.468611111
+        ]
+      }, 
+      "properties" : {
+        "FID" : 38, 
+        "Name" : "FOX RIVER", 
+        "ICAO_Code" : "NZFR", 
+        "Latitude" : "432807S", 
+        "Longitude" : "1700007E", 
+        "Latitude_D" : -43.4686111111, 
+        "Longitude_" : 170.001944444, 
+        "Lat" : "43 28 07S", 
+        "Lon" : "170 00 07E", 
+        "Lat_D" : -43.4686111111, 
+        "Lon_D" : 170.001944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZFR"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 39, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.270277778, -40.456666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 39, 
+        "Name" : "FOXPINE", 
+        "ICAO_Code" : "NZFP", 
+        "Latitude" : "402724.0S", 
+        "Longitude" : "1751613.0E", 
+        "Latitude_D" : -40.4566666667, 
+        "Longitude_" : 175.270277778, 
+        "Lat" : "40 27 24.0S", 
+        "Lon" : "175 16 13.0E", 
+        "Lat_D" : -40.4566666667, 
+        "Lon_D" : 175.270277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZFP"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 40, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.134444444, -43.363055556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 40, 
+        "Name" : "FRANZ JOSEF", 
+        "ICAO_Code" : "NZFJ", 
+        "Latitude" : "432147.0S", 
+        "Longitude" : "1700804.0E", 
+        "Latitude_D" : -43.3630555556, 
+        "Longitude_" : 170.134444444, 
+        "Lat" : "43 21 47.0S", 
+        "Lon" : "170 08 04.0E", 
+        "Lat_D" : -43.3630555556, 
+        "Lon_D" : 170.134444444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZFJ"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 41, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.741944444, -38.408611111
+        ]
+      }, 
+      "properties" : {
+        "FID" : 41, 
+        "Name" : "GALATEA", 
+        "ICAO_Code" : "NZGA", 
+        "Latitude" : "382431.0S", 
+        "Longitude" : "1764431.0E", 
+        "Latitude_D" : -38.4086111111, 
+        "Longitude_" : 176.741944444, 
+        "Lat" : "38 24 31.0S", 
+        "Lon" : "176 44 31.0E", 
+        "Lat_D" : -38.4086111111, 
+        "Lon_D" : 176.741944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZGA"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 42, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          177.978333333, -38.663333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 42, 
+        "Name" : "GISBORNE", 
+        "ICAO_Code" : "NZGS", 
+        "Latitude" : "383948S", 
+        "Longitude" : "1775842E", 
+        "Latitude_D" : -38.6633333333, 
+        "Longitude_" : 177.978333333, 
+        "Lat" : "38 39 48S", 
+        "Lon" : "177 58 42E", 
+        "Lat_D" : -38.6633333333, 
+        "Lon_D" : 177.978333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZGS"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 43, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          178.003611111, -38.6386111109999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 43, 
+        "Name" : "GISBORNE HOSPITAL", 
+        "ICAO_Code" : "NZJG", 
+        "Latitude" : "383819S", 
+        "Longitude" : "1780013E", 
+        "Latitude_D" : -38.6386111111, 
+        "Longitude_" : 178.003611111, 
+        "Lat" : "38 38 19S", 
+        "Lon" : "178 00 13E", 
+        "Lat_D" : -38.6386111111, 
+        "Lon_D" : 178.003611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJG"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 44, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.18, -43.3872222219999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 44, 
+        "Name" : "GLACIER COUNTRY", 
+        "ICAO_Code" : "NZGH", 
+        "Latitude" : "432314S", 
+        "Longitude" : "1701048E", 
+        "Latitude_D" : -43.3872222222, 
+        "Longitude_" : 170.18, 
+        "Lat" : "43 23 14S", 
+        "Lon" : "170 10 48E", 
+        "Lat_D" : -43.3872222222, 
+        "Lon_D" : 170.18, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZGH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 45, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.3975, -44.871666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 45, 
+        "Name" : "GLENORCHY", 
+        "ICAO_Code" : "NZGY", 
+        "Latitude" : "445218.0S", 
+        "Longitude" : "1682351.0E", 
+        "Latitude_D" : -44.8716666667, 
+        "Longitude_" : 168.3975, 
+        "Lat" : "44 52 18.0S", 
+        "Lon" : "168 23 51.0E", 
+        "Lat_D" : -44.8716666667, 
+        "Lon_D" : 168.3975, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZGY"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 46, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.129027778, -43.9077166669999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 46, 
+        "Name" : "GLENTANNER", 
+        "ICAO_Code" : "NZGT", 
+        "Latitude" : "435427.78S", 
+        "Longitude" : "1700744.50E", 
+        "Latitude_D" : -43.9077166667, 
+        "Longitude_" : 170.129027778, 
+        "Lat" : "43 54 27.78S", 
+        "Lon" : "170 07 44.50E", 
+        "Lat_D" : -43.9077166667, 
+        "Lon_D" : 170.129027778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZGT"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 47, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.898333333, -46.156666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 47, 
+        "Name" : "GORE", 
+        "ICAO_Code" : "NZGC", 
+        "Latitude" : "460924.0S", 
+        "Longitude" : "1685354.0E", 
+        "Latitude_D" : -46.1566666667, 
+        "Longitude_" : 168.898333333, 
+        "Lat" : "46 09 24.0S", 
+        "Lon" : "168 53 54.0E", 
+        "Lat_D" : -46.1566666667, 
+        "Lon_D" : 168.898333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZGC"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 48, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.938472222, -46.1026944439999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 48, 
+        "Name" : "GORE HOSPITAL", 
+        "ICAO_Code" : "NZGO", 
+        "Latitude" : "460609.7S", 
+        "Longitude" : "1685618.5E", 
+        "Latitude_D" : -46.1026944444, 
+        "Longitude_" : 168.938472222, 
+        "Lat" : "46 06 09.7S", 
+        "Lon" : "168 56 18.5E", 
+        "Lat_D" : -46.1026944444, 
+        "Lon_D" : 168.938472222, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZGO"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 49, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.471944444, -36.2413888889999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 49, 
+        "Name" : "GREAT BARRIER", 
+        "ICAO_Code" : "NZGB", 
+        "Latitude" : "361429S", 
+        "Longitude" : "1752819E", 
+        "Latitude_D" : -36.2413888889, 
+        "Longitude_" : 175.471944444, 
+        "Lat" : "36 14 29S", 
+        "Lon" : "175 28 19E", 
+        "Lat_D" : -36.2413888889, 
+        "Lon_D" : 175.471944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZGB"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 50, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          171.19, -42.461666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 50, 
+        "Name" : "GREYMOUTH", 
+        "ICAO_Code" : "NZGM", 
+        "Latitude" : "422742S", 
+        "Longitude" : "1711124E", 
+        "Latitude_D" : -42.4616666667, 
+        "Longitude_" : 171.19, 
+        "Lat" : "42 27 42S", 
+        "Lon" : "171 11 24E", 
+        "Lat_D" : -42.4616666667, 
+        "Lon_D" : 171.19, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZGM"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 51, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.040277778, -43.8666666669999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 51, 
+        "Name" : "HAAST", 
+        "ICAO_Code" : "NZHT", 
+        "Latitude" : "435200.0S", 
+        "Longitude" : "1690225.0E", 
+        "Latitude_D" : -43.8666666667, 
+        "Longitude_" : 169.040277778, 
+        "Lat" : "43 52 00.0S", 
+        "Lon" : "169 02 25.0E", 
+        "Lat_D" : -43.8666666667, 
+        "Lon_D" : 169.040277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZHT"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 52, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.335277778, -37.8663888889999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 52, 
+        "Name" : "HAMILTON", 
+        "ICAO_Code" : "NZHN", 
+        "Latitude" : "375159S", 
+        "Longitude" : "1752007E", 
+        "Latitude_D" : -37.8663888889, 
+        "Longitude_" : 175.335277778, 
+        "Lat" : "37 51 59S", 
+        "Lon" : "175 20 07E", 
+        "Lat_D" : -37.8663888889, 
+        "Lon_D" : 175.335277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZHN"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 53, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.798055556, -42.5697222219999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 53, 
+        "Name" : "HANMER", 
+        "ICAO_Code" : "NZHM", 
+        "Latitude" : "423411S", 
+        "Longitude" : "1724753E", 
+        "Latitude_D" : -42.5697222222, 
+        "Longitude_" : 172.798055556, 
+        "Lat" : "42 34 11S", 
+        "Lon" : "172 47 53E", 
+        "Lat_D" : -42.5697222222, 
+        "Lon_D" : 172.798055556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZHM"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 54, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.766944444, -39.646666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 54, 
+        "Name" : "HASTINGS", 
+        "ICAO_Code" : "NZHS", 
+        "Latitude" : "393848S", 
+        "Longitude" : "1764601E", 
+        "Latitude_D" : -39.6466666667, 
+        "Longitude_" : 176.766944444, 
+        "Lat" : "39 38 48S", 
+        "Lon" : "176 46 01E", 
+        "Lat_D" : -39.6466666667, 
+        "Lon_D" : 176.766944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZHS"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 55, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.823888889, -39.63
+        ]
+      }, 
+      "properties" : {
+        "FID" : 55, 
+        "Name" : "HASTINGS HOSPITAL", 
+        "ICAO_Code" : "NZJH", 
+        "Latitude" : "393748.0S", 
+        "Longitude" : "1764926.0E", 
+        "Latitude_D" : -39.63, 
+        "Longitude_" : 176.823888889, 
+        "Lat" : "39 37 48.0S", 
+        "Lon" : "176 49 26.0E", 
+        "Lat_D" : -39.63, 
+        "Lon_D" : 176.823888889, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 56, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.266944444, -39.5533333329999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 56, 
+        "Name" : "HAWERA", 
+        "ICAO_Code" : "NZHA", 
+        "Latitude" : "393312S", 
+        "Longitude" : "1741601E", 
+        "Latitude_D" : -39.5533333333, 
+        "Longitude_" : 174.266944444, 
+        "Lat" : "39 33 12S", 
+        "Lon" : "174 16 01E", 
+        "Lat_D" : -39.5533333333, 
+        "Lon_D" : 174.266944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZHA"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 57, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.363158333, -35.423055556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 57, 
+        "Name" : "HELENA BAY", 
+        "ICAO_Code" : "NZHB", 
+        "Latitude" : "352523.00S", 
+        "Longitude" : "1742147.37E", 
+        "Latitude_D" : -35.4230555556, 
+        "Longitude_" : 174.363158333, 
+        "Lat" : "35 25 23.00S", 
+        "Lon" : "174 21 47.37E", 
+        "Lat_D" : -35.4230555556, 
+        "Lon_D" : 174.363158333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZHB"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 58, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.985277778, -42.713611111
+        ]
+      }, 
+      "properties" : {
+        "FID" : 58, 
+        "Name" : "HOKITIKA", 
+        "ICAO_Code" : "NZHK", 
+        "Latitude" : "424249S", 
+        "Longitude" : "1705907E", 
+        "Latitude_D" : -42.7136111111, 
+        "Longitude_" : 170.985277778, 
+        "Lat" : "42 42 49S", 
+        "Lon" : "170 59 07E", 
+        "Lat_D" : -42.7136111111, 
+        "Lon_D" : 170.985277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZHK"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 59, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.088244444, -38.643263889
+        ]
+      }, 
+      "properties" : {
+        "FID" : 59, 
+        "Name" : "HUKA FALLS", 
+        "ICAO_Code" : "NZHF", 
+        "Latitude" : "383835.75S", 
+        "Longitude" : "1760517.68E", 
+        "Latitude_D" : -38.6432638889, 
+        "Longitude_" : 176.088244444, 
+        "Lat" : "38 38 35.75S", 
+        "Lon" : "176 05 17.68E", 
+        "Lat_D" : -38.6432638889, 
+        "Lon_D" : 176.088244444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZHF"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 60, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.32, -46.415
+        ]
+      }, 
+      "properties" : {
+        "FID" : 60, 
+        "Name" : "INVERCARGILL", 
+        "ICAO_Code" : "NZNV", 
+        "Latitude" : "462454S", 
+        "Longitude" : "1681912E", 
+        "Latitude_D" : -46.415, 
+        "Longitude_" : 168.32, 
+        "Lat" : "46 24 54S", 
+        "Lon" : "168 19 12E", 
+        "Lat_D" : -46.415, 
+        "Lon_D" : 168.32, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZNV"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 61, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.817222222, -35.451111111
+        ]
+      }, 
+      "properties" : {
+        "FID" : 61, 
+        "Name" : "KAIKOHE", 
+        "ICAO_Code" : "NZKO", 
+        "Latitude" : "352704.0S", 
+        "Longitude" : "1734902.0E", 
+        "Latitude_D" : -35.4511111111, 
+        "Longitude_" : 173.817222222, 
+        "Lat" : "35 27 04.0S", 
+        "Lon" : "173 49 02.0E", 
+        "Lat_D" : -35.4511111111, 
+        "Lon_D" : 173.817222222, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKO"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 62, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.605277778, -42.425
+        ]
+      }, 
+      "properties" : {
+        "FID" : 62, 
+        "Name" : "KAIKOURA", 
+        "ICAO_Code" : "NZKI", 
+        "Latitude" : "422530S", 
+        "Longitude" : "1733619E", 
+        "Latitude_D" : -42.425, 
+        "Longitude_" : 173.605277778, 
+        "Lat" : "42 25 30S", 
+        "Lon" : "173 36 19E", 
+        "Lat_D" : -42.425, 
+        "Lon_D" : 173.605277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKI"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 63, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.680833333, -42.395
+        ]
+      }, 
+      "properties" : {
+        "FID" : 63, 
+        "Name" : "KAIKOURA BEACHFRONT", 
+        "ICAO_Code" : "NZKJ", 
+        "Latitude" : "422342S", 
+        "Longitude" : "1734051E", 
+        "Latitude_D" : -42.395, 
+        "Longitude_" : 173.680833333, 
+        "Lat" : "42 23 42S", 
+        "Lon" : "173 40 51E", 
+        "Lat_D" : -42.395, 
+        "Lon_D" : 173.680833333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKJ"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 64, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.680941667, -42.404322222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 64, 
+        "Name" : "KAIKOURA MEDICAL CENTRE", 
+        "ICAO_Code" : "NZKC", 
+        "Latitude" : "422415.56S", 
+        "Longitude" : "1734051.39E", 
+        "Latitude_D" : -42.4043222222, 
+        "Longitude_" : 173.680941667, 
+        "Lat" : "42 24 15.56S", 
+        "Lon" : "173 40 51.39E", 
+        "Lat_D" : -42.4043222222, 
+        "Lon_D" : 173.680941667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKC"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 65, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.587222222, -36.406388889
+        ]
+      }, 
+      "properties" : {
+        "FID" : 65, 
+        "Name" : "KAIPARA FLATS", 
+        "ICAO_Code" : "NZKF", 
+        "Latitude" : "362423.0S", 
+        "Longitude" : "1743514.0E", 
+        "Latitude_D" : -36.4063888889, 
+        "Longitude_" : 174.587222222, 
+        "Lat" : "36 24 23.0S", 
+        "Lon" : "174 35 14.0E", 
+        "Lat_D" : -36.4063888889, 
+        "Lon_D" : 174.587222222, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKF"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 66, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.285277778, -35.0699999999999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 66, 
+        "Name" : "KAITAIA", 
+        "ICAO_Code" : "NZKT", 
+        "Latitude" : "350412.0S", 
+        "Longitude" : "1731707.0E", 
+        "Latitude_D" : -35.07, 
+        "Longitude_" : 173.285277778, 
+        "Lat" : "35 04 12.0S", 
+        "Lon" : "173 17 07.0E", 
+        "Lat_D" : -35.07, 
+        "Lon_D" : 173.285277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKT"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 67, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.260916667, -35.118416667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 67, 
+        "Name" : "KAITAIA HOSPITAL", 
+        "ICAO_Code" : "NZJK", 
+        "Latitude" : "350706.3S", 
+        "Longitude" : "1731539.3E", 
+        "Latitude_D" : -35.1184166667, 
+        "Longitude_" : 173.260916667, 
+        "Lat" : "35 07 06.3S", 
+        "Lon" : "173 15 39.3E", 
+        "Lat_D" : -35.1184166667, 
+        "Lon_D" : 173.260916667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJK"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 68, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.105, -41.236666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 68, 
+        "Name" : "KARAMEA", 
+        "ICAO_Code" : "NZKM", 
+        "Latitude" : "411412.0S", 
+        "Longitude" : "1720618.0E", 
+        "Latitude_D" : -41.2366666667, 
+        "Longitude_" : 172.105, 
+        "Lat" : "41 14 12.0S", 
+        "Lon" : "172 06 18.0E", 
+        "Lat_D" : -41.2366666667, 
+        "Lon_D" : 172.105, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKM"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 69, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.065555556, -36.829722222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 69, 
+        "Name" : "KAUAROA BAY", 
+        "ICAO_Code" : "NZWE", 
+        "Latitude" : "364947.0S", 
+        "Longitude" : "1750356.0E", 
+        "Latitude_D" : -36.8297222222, 
+        "Longitude_" : 175.065555556, 
+        "Lat" : "36 49 47.0S", 
+        "Lon" : "175 03 56.0E", 
+        "Lat_D" : -36.8297222222, 
+        "Lon_D" : 175.065555556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWE"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 70, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.835277778, -41.145
+        ]
+      }, 
+      "properties" : {
+        "FID" : 70, 
+        "Name" : "KENEPURU HOSPITAL", 
+        "ICAO_Code" : "NZKH", 
+        "Latitude" : "410842.0S", 
+        "Longitude" : "1745007.0E", 
+        "Latitude_D" : -41.145, 
+        "Longitude_" : 174.835277778, 
+        "Lat" : "41 08 42.0S", 
+        "Lon" : "174 50 07.0E", 
+        "Lat_D" : -41.145, 
+        "Lon_D" : 174.835277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 71, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.312733333, -35.704613889
+        ]
+      }, 
+      "properties" : {
+        "FID" : 71, 
+        "Name" : "KENSINGTON PARK", 
+        "ICAO_Code" : "NZKN", 
+        "Latitude" : "354216.61S", 
+        "Longitude" : "1741845.84E", 
+        "Latitude_D" : -35.7046138889, 
+        "Longitude_" : 174.312733333, 
+        "Lat" : "35 42 16.61S", 
+        "Lon" : "174 18 45.84E", 
+        "Lat_D" : -35.7046138889, 
+        "Lon_D" : 174.312733333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKN"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 72, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.911944444, -35.2627777779999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 72, 
+        "Name" : "KERIKERI/BAY OF ISLANDS", 
+        "ICAO_Code" : "NZKK", 
+        "Latitude" : "351546S", 
+        "Longitude" : "1735443E", 
+        "Latitude_D" : -35.2627777778, 
+        "Longitude_" : 173.911944444, 
+        "Lat" : "35 15 46S", 
+        "Lon" : "173 54 43E", 
+        "Lat_D" : -35.2627777778, 
+        "Lon_D" : 173.911944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKK"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 73, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.333055556, -40.559444444
+        ]
+      }, 
+      "properties" : {
+        "FID" : 73, 
+        "Name" : "KOPUTAROA", 
+        "ICAO_Code" : "NZKP", 
+        "Latitude" : "403334S", 
+        "Longitude" : "1751959E", 
+        "Latitude_D" : -40.5594444444, 
+        "Longitude_" : 175.333055556, 
+        "Lat" : "40 33 34S", 
+        "Lon" : "175 19 59E", 
+        "Lat_D" : -40.5594444444, 
+        "Lon_D" : 175.333055556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKP"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 74, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.421388889, -39.845277778
+        ]
+      }, 
+      "properties" : {
+        "FID" : 74, 
+        "Name" : "KOWHAI", 
+        "ICAO_Code" : "NZKY", 
+        "Latitude" : "395043.0S", 
+        "Longitude" : "1762517.0E", 
+        "Latitude_D" : -39.8452777778, 
+        "Longitude_" : 176.421388889, 
+        "Lat" : "39 50 43.0S", 
+        "Lon" : "176 25 17.0E", 
+        "Lat_D" : -39.8452777778, 
+        "Lon_D" : 176.421388889, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKY"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 75, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.11975, -39.8526666669999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 75, 
+        "Name" : "KUPE", 
+        "ICAO_Code" : "NZKU", 
+        "Latitude" : "395109.6S", 
+        "Longitude" : "1740711.1E", 
+        "Latitude_D" : -39.8526666667, 
+        "Longitude_" : 174.11975, 
+        "Lat" : "39 51 09.6S", 
+        "Lon" : "174 07 11.1E", 
+        "Lat_D" : -39.8526666667, 
+        "Lon_D" : 174.11975, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKU"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 76, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          171.699166667, -42.601111111
+        ]
+      }, 
+      "properties" : {
+        "FID" : 76, 
+        "Name" : "LAKE HAUPIRI", 
+        "ICAO_Code" : "NZHP", 
+        "Latitude" : "423604S", 
+        "Longitude" : "1714157E", 
+        "Latitude_D" : -42.6011111111, 
+        "Longitude_" : 171.699166667, 
+        "Lat" : "42 36 04S", 
+        "Lon" : "171 41 57E", 
+        "Lat_D" : -42.6011111111, 
+        "Lon_D" : 171.699166667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZHP"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 77, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.745833333, -41.7591666669999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 77, 
+        "Name" : "LAKE STATION/NELSON LAKES", 
+        "ICAO_Code" : "NZLE", 
+        "Latitude" : "414533.0S", 
+        "Longitude" : "1724445.0E", 
+        "Latitude_D" : -41.7591666667, 
+        "Longitude_" : 172.745833333, 
+        "Lat" : "41 45 33.0S", 
+        "Lon" : "172 44 45.0E", 
+        "Lat_D" : -41.7591666667, 
+        "Lon_D" : 172.745833333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZLE"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 78, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.494166667, -43.2336111109999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 78, 
+        "Name" : "LOBURN ABBEY", 
+        "ICAO_Code" : "NZLA", 
+        "Latitude" : "431401S", 
+        "Longitude" : "1722939E", 
+        "Latitude_D" : -43.2336111111, 
+        "Longitude_" : 172.494166667, 
+        "Lat" : "43 14 01S", 
+        "Lon" : "172 29 39E", 
+        "Lat_D" : -43.2336111111, 
+        "Lon_D" : 172.494166667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZLA"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 79, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.442355556, -45.741047222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 79, 
+        "Name" : "LUMSDEN MEDICAL CENTRE", 
+        "ICAO_Code" : "NZLM", 
+        "Latitude" : "454427.77S", 
+        "Longitude" : "1682632.48E", 
+        "Latitude_D" : -45.7410472222, 
+        "Longitude_" : 168.442355556, 
+        "Lat" : "45 44 27.77S", 
+        "Lon" : "168 26 32.48E", 
+        "Lat_D" : -45.7410472222, 
+        "Lon_D" : 168.442355556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZLM"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 80, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.230277778, -44.231666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 80, 
+        "Name" : "MAKARORA", 
+        "ICAO_Code" : "NZMW", 
+        "Latitude" : "441354.0S", 
+        "Longitude" : "1691349.0E", 
+        "Latitude_D" : -44.2316666667, 
+        "Longitude_" : 169.230277778, 
+        "Lat" : "44 13 54.0S", 
+        "Lon" : "169 13 49.0E", 
+        "Lat_D" : -44.2316666667, 
+        "Lon_D" : 169.230277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZMW"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 81, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.230023528, -44.233086444
+        ]
+      }, 
+      "properties" : {
+        "FID" : 81, 
+        "Name" : "MAKARORA HELIPORT", 
+        "ICAO_Code" : "NZOG", 
+        "Latitude" : "441359.1112S", 
+        "Longitude" : "1691348.0847E", 
+        "Latitude_D" : -44.2330864444, 
+        "Longitude_" : 169.230023528, 
+        "Lat" : "44 13 59.1112S", 
+        "Lon" : "169 13 48.0847E", 
+        "Lat_D" : -44.2330864444, 
+        "Lon_D" : 169.230023528, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZOG"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 82, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.812222222, -45.9902777779999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 82, 
+        "Name" : "MANDEVILLE", 
+        "ICAO_Code" : "NZVL", 
+        "Latitude" : "455925.0S", 
+        "Longitude" : "1684844.0E", 
+        "Latitude_D" : -45.9902777778, 
+        "Longitude_" : 168.812222222, 
+        "Lat" : "45 59 25.0S", 
+        "Lon" : "168 48 44.0E", 
+        "Lat_D" : -45.9902777778, 
+        "Lon_D" : 168.812222222, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZVL"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 83, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.4645, -34.995583333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 83, 
+        "Name" : "MANGONUI", 
+        "ICAO_Code" : "NZMG", 
+        "Latitude" : "345944.1S", 
+        "Longitude" : "1732752.2E", 
+        "Latitude_D" : -34.9955833333, 
+        "Longitude_" : 173.4645, 
+        "Lat" : "34 59 44.1S", 
+        "Lon" : "173 27 52.2E", 
+        "Lat_D" : -34.9955833333, 
+        "Lon_D" : 173.4645, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZMG"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 84, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.021666667, -41.2555555559999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 84, 
+        "Name" : "MARLBOROUGH SOUNDS", 
+        "ICAO_Code" : "NZSO", 
+        "Latitude" : "411520S", 
+        "Longitude" : "1740118E", 
+        "Latitude_D" : -41.2555555556, 
+        "Longitude_" : 174.021666667, 
+        "Lat" : "41 15 20S", 
+        "Lon" : "174 01 18E", 
+        "Lat_D" : -41.2555555556, 
+        "Lon_D" : 174.021666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZSO"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 85, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.019166667, -44.3636111109999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 85, 
+        "Name" : "MARTINS BAY", 
+        "ICAO_Code" : "NZMJ", 
+        "Latitude" : "442149.0S", 
+        "Longitude" : "1680109.0E", 
+        "Latitude_D" : -44.3636111111, 
+        "Longitude_" : 168.019166667, 
+        "Lat" : "44 21 49.0S", 
+        "Lon" : "168 01 09.0E", 
+        "Lat_D" : -44.3636111111, 
+        "Lon_D" : 168.019166667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZMJ"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 86, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.633611111, -40.973333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 86, 
+        "Name" : "MASTERTON", 
+        "ICAO_Code" : "NZMS", 
+        "Latitude" : "405824S", 
+        "Longitude" : "1753801E", 
+        "Latitude_D" : -40.9733333333, 
+        "Longitude_" : 175.633611111, 
+        "Lat" : "40 58 24S", 
+        "Lon" : "175 38 01E", 
+        "Lat_D" : -40.9733333333, 
+        "Lon_D" : 175.633611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZMS"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 87, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.741944444, -37.734444444
+        ]
+      }, 
+      "properties" : {
+        "FID" : 87, 
+        "Name" : "MATAMATA", 
+        "ICAO_Code" : "NZMA", 
+        "Latitude" : "374404.0S", 
+        "Longitude" : "1754431.0E", 
+        "Latitude_D" : -37.7344444444, 
+        "Longitude_" : 175.741944444, 
+        "Lat" : "37 44 04.0S", 
+        "Lon" : "175 44 31.0E", 
+        "Lat_D" : -37.7344444444, 
+        "Lon_D" : 175.741944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZMA"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 88, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.449444444, -39.5549999999999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 88, 
+        "Name" : "MAUI A", 
+        "ICAO_Code" : "NZUA", 
+        "Latitude" : "393318S", 
+        "Longitude" : "1732658E", 
+        "Latitude_D" : -39.555, 
+        "Longitude_" : 173.449444444, 
+        "Lat" : "39 33 18S", 
+        "Lon" : "173 26 58E", 
+        "Lat_D" : -39.555, 
+        "Lon_D" : 173.449444444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZUA"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 89, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.315833333, -39.645277778
+        ]
+      }, 
+      "properties" : {
+        "FID" : 89, 
+        "Name" : "MAUI B", 
+        "ICAO_Code" : "NZUB", 
+        "Latitude" : "393843S", 
+        "Longitude" : "1731857E", 
+        "Latitude_D" : -39.6452777778, 
+        "Longitude_" : 173.315833333, 
+        "Lat" : "39 38 43S", 
+        "Lon" : "173 18 57E", 
+        "Lat_D" : -39.6452777778, 
+        "Lon_D" : 173.315833333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZUB"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 90, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.788611111, -36.846666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 90, 
+        "Name" : "MECHANICS BAY", 
+        "ICAO_Code" : "NZMB", 
+        "Latitude" : "365048S", 
+        "Longitude" : "1744719E", 
+        "Latitude_D" : -36.8466666667, 
+        "Longitude_" : 174.788611111, 
+        "Lat" : "36 50 48S", 
+        "Lon" : "174 47 19E", 
+        "Lat_D" : -36.8466666667, 
+        "Lon_D" : 174.788611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZMB"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 91, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.114722222, -37.2591666669999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 91, 
+        "Name" : "MERCER", 
+        "ICAO_Code" : "NZME", 
+        "Latitude" : "371533.0S", 
+        "Longitude" : "1750653.0E", 
+        "Latitude_D" : -37.2591666667, 
+        "Longitude_" : 175.114722222, 
+        "Lat" : "37 15 33.0S", 
+        "Lon" : "175 06 53.0E", 
+        "Lat_D" : -37.2591666667, 
+        "Lon_D" : 175.114722222, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZME"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 92, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.190833333, -43.353611111
+        ]
+      }, 
+      "properties" : {
+        "FID" : 92, 
+        "Name" : "MID WAIHO LOOP", 
+        "ICAO_Code" : "NZML", 
+        "Latitude" : "432113S", 
+        "Longitude" : "1701127E", 
+        "Latitude_D" : -43.3536111111, 
+        "Longitude_" : 170.190833333, 
+        "Lat" : "43 21 13S", 
+        "Lon" : "170 11 27E", 
+        "Lat_D" : -43.3536111111, 
+        "Lon_D" : 170.190833333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZML"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 93, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          167.923333333, -44.6733333329999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 93, 
+        "Name" : "MILFORD SOUND", 
+        "ICAO_Code" : "NZMF", 
+        "Latitude" : "444024.0S", 
+        "Longitude" : "1675524.0E", 
+        "Latitude_D" : -44.6733333333, 
+        "Longitude_" : 167.923333333, 
+        "Lat" : "44 40 24.0S", 
+        "Lon" : "167 55 24.0E", 
+        "Lat_D" : -44.6733333333, 
+        "Lon_D" : 167.923333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZMF"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 94, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.324444444, -36.1780555559999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 94, 
+        "Name" : "MOTU KAIKOURA ISLAND", 
+        "ICAO_Code" : "NZKD", 
+        "Latitude" : "361041.0S", 
+        "Longitude" : "1751928.0E", 
+        "Latitude_D" : -36.1780555556, 
+        "Longitude_" : 175.324444444, 
+        "Lat" : "36 10 41.0S", 
+        "Lon" : "175 19 28.0E", 
+        "Lat_D" : -36.1780555556, 
+        "Lon_D" : 175.324444444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKD"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 95, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.988611111, -41.123333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 95, 
+        "Name" : "MOTUEKA", 
+        "ICAO_Code" : "NZMK", 
+        "Latitude" : "410724S", 
+        "Longitude" : "1725919E", 
+        "Latitude_D" : -41.1233333333, 
+        "Longitude_" : 172.988611111, 
+        "Lat" : "41 07 24S", 
+        "Lon" : "172 59 19E", 
+        "Lat_D" : -41.1233333333, 
+        "Lon_D" : 172.988611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZMK"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 96, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.133333333, -43.7649999999999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 96, 
+        "Name" : "MOUNT COOK", 
+        "ICAO_Code" : "NZMC", 
+        "Latitude" : "434554S", 
+        "Longitude" : "1700800E", 
+        "Latitude_D" : -43.765, 
+        "Longitude_" : 170.133333333, 
+        "Lat" : "43 45 54S", 
+        "Lon" : "170 08 00E", 
+        "Lat_D" : -43.765, 
+        "Lon_D" : 170.133333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZMC"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 97, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.315, -41.7966666669999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 97, 
+        "Name" : "MURCHISON", 
+        "ICAO_Code" : "NZMR", 
+        "Latitude" : "414748.0S", 
+        "Longitude" : "1721854.0E", 
+        "Latitude_D" : -41.7966666667, 
+        "Longitude_" : 172.315, 
+        "Lat" : "41 47 48.0S", 
+        "Lon" : "172 18 54.0E", 
+        "Lat_D" : -41.7966666667, 
+        "Lon_D" : 172.315, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZMR"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 98, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.328611111, -41.806388889
+        ]
+      }, 
+      "properties" : {
+        "FID" : 98, 
+        "Name" : "MURCHISON HOSPITAL", 
+        "ICAO_Code" : "NZUR", 
+        "Latitude" : "414823.0S", 
+        "Longitude" : "1721943.0E", 
+        "Latitude_D" : -41.8063888889, 
+        "Longitude_" : 172.328611111, 
+        "Lat" : "41 48 23.0S", 
+        "Lon" : "172 19 43.0E", 
+        "Lat_D" : -41.8063888889, 
+        "Lon_D" : 172.328611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZUR"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 99, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.87, -39.465833333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 99, 
+        "Name" : "NAPIER", 
+        "ICAO_Code" : "NZNR", 
+        "Latitude" : "392757S", 
+        "Longitude" : "1765212E", 
+        "Latitude_D" : -39.4658333333, 
+        "Longitude_" : 176.87, 
+        "Lat" : "39 27 57S", 
+        "Lon" : "176 52 12E", 
+        "Lat_D" : -39.4658333333, 
+        "Lon_D" : 176.87, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZNR"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 100, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.221111111, -41.298333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 100, 
+        "Name" : "NELSON", 
+        "ICAO_Code" : "NZNS", 
+        "Latitude" : "411754S", 
+        "Longitude" : "1731316E", 
+        "Latitude_D" : -41.2983333333, 
+        "Longitude_" : 173.221111111, 
+        "Lat" : "41 17 54S", 
+        "Lon" : "173 13 16E", 
+        "Lat_D" : -41.2983333333, 
+        "Lon_D" : 173.221111111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZNS"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 101, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.272222222, -41.288333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 101, 
+        "Name" : "NELSON HOSPITAL", 
+        "ICAO_Code" : "NZNH", 
+        "Latitude" : "411718.0S", 
+        "Longitude" : "1731620.0E", 
+        "Latitude_D" : -41.2883333333, 
+        "Longitude_" : 173.272222222, 
+        "Lat" : "41 17 18.0S", 
+        "Lon" : "173 16 20.0E", 
+        "Lat_D" : -41.2883333333, 
+        "Lon_D" : 173.272222222, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZNH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 102, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.179166667, -39.0086111109999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 102, 
+        "Name" : "NEW PLYMOUTH", 
+        "ICAO_Code" : "NZNP", 
+        "Latitude" : "390031S", 
+        "Longitude" : "1741045E", 
+        "Latitude_D" : -39.0086111111, 
+        "Longitude_" : 174.179166667, 
+        "Lat" : "39 00 31S", 
+        "Lon" : "174 10 45E", 
+        "Lat_D" : -39.0086111111, 
+        "Lon_D" : 174.179166667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZNP"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 103, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.223333333, -39.2044722219999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 103, 
+        "Name" : "NORFOLK", 
+        "ICAO_Code" : "NZNF", 
+        "Latitude" : "391216.1S", 
+        "Longitude" : "1741324.0E", 
+        "Latitude_D" : -39.2044722222, 
+        "Longitude_" : 174.223333333, 
+        "Lat" : "39 12 16.1S", 
+        "Lon" : "174 13 24.0E", 
+        "Lat_D" : -39.2044722222, 
+        "Lon_D" : 174.223333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZNF"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 104, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.655277778, -36.656666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 104, 
+        "Name" : "NORTH SHORE", 
+        "ICAO_Code" : "NZNE", 
+        "Latitude" : "363924S", 
+        "Longitude" : "1743919E", 
+        "Latitude_D" : -36.6566666667, 
+        "Longitude_" : 174.655277778, 
+        "Lat" : "36 39 24S", 
+        "Lon" : "174 39 19E", 
+        "Lat_D" : -36.6566666667, 
+        "Lon_D" : 174.655277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZNE"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 105, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.758611111, -36.781666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 105, 
+        "Name" : "NORTH SHORE HOSPITAL", 
+        "ICAO_Code" : "NZJN", 
+        "Latitude" : "364654.0S", 
+        "Longitude" : "1744531.0E", 
+        "Latitude_D" : -36.7816666667, 
+        "Longitude_" : 174.758611111, 
+        "Lat" : "36 46 54.0S", 
+        "Lon" : "174 45 31.0E", 
+        "Lat_D" : -36.7816666667, 
+        "Lon_D" : 174.758611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJN"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 106, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          171.081666667, -44.9699999999999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 106, 
+        "Name" : "OAMARU", 
+        "ICAO_Code" : "NZOU", 
+        "Latitude" : "445812S", 
+        "Longitude" : "1710454E", 
+        "Latitude_D" : -44.97, 
+        "Longitude_" : 171.081666667, 
+        "Lat" : "44 58 12S", 
+        "Lon" : "171 04 54E", 
+        "Lat_D" : -44.97, 
+        "Lon_D" : 171.081666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZOU"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 107, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.967025, -45.099561111
+        ]
+      }, 
+      "properties" : {
+        "FID" : 107, 
+        "Name" : "OAMARU HOSPITAL", 
+        "ICAO_Code" : "NZOR", 
+        "Latitude" : "450558.42S", 
+        "Longitude" : "1705801.29E", 
+        "Latitude_D" : -45.0995611111, 
+        "Longitude_" : 170.967025, 
+        "Lat" : "45 05 58.42S", 
+        "Lon" : "170 58 01.29E", 
+        "Lat_D" : -45.0995611111, 
+        "Lon_D" : 170.967025, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZOR"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 108, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.124444444, -46.900555556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 108, 
+        "Name" : "OBAN", 
+        "ICAO_Code" : "NZON", 
+        "Latitude" : "465402.00S", 
+        "Longitude" : "1680728.00E", 
+        "Latitude_D" : -46.9005555556, 
+        "Longitude_" : 168.124444444, 
+        "Lat" : "46 54 02.00S", 
+        "Lon" : "168 07 28.00E", 
+        "Lat_D" : -46.9005555556, 
+        "Lon_D" : 168.124444444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZON"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 109, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.305555556, -46.589722222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 109, 
+        "Name" : "OCEAN BEACH", 
+        "ICAO_Code" : "NZOB", 
+        "Latitude" : "463523.0S", 
+        "Longitude" : "1681820.0E", 
+        "Latitude_D" : -46.5897222222, 
+        "Longitude_" : 168.305555556, 
+        "Lat" : "46 35 23.0S", 
+        "Lon" : "168 18 20.0E", 
+        "Lat_D" : -46.5897222222, 
+        "Lon_D" : 168.305555556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZOB"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 110, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.386897222, -40.206688889
+        ]
+      }, 
+      "properties" : {
+        "FID" : 110, 
+        "Name" : "OHAKEA", 
+        "ICAO_Code" : "NZOH", 
+        "Latitude" : "401224.08S", 
+        "Longitude" : "1752312.83E", 
+        "Latitude_D" : -40.2066888889, 
+        "Longitude_" : 175.386897222, 
+        "Lat" : "40 12 24.08S", 
+        "Lon" : "175 23 12.83E", 
+        "Lat_D" : -40.2066888889, 
+        "Lon_D" : 175.386897222, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZOH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 111, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.418611111, -36.146388889
+        ]
+      }, 
+      "properties" : {
+        "FID" : 111, 
+        "Name" : "OKIWI STATION", 
+        "ICAO_Code" : "NZOX", 
+        "Latitude" : "360847.0S", 
+        "Longitude" : "1752507.0E", 
+        "Latitude_D" : -36.1463888889, 
+        "Longitude_" : 175.418611111, 
+        "Lat" : "36 08 47.0S", 
+        "Lon" : "175 25 07.0E", 
+        "Lat_D" : -36.1463888889, 
+        "Lon_D" : 175.418611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZOX"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 112, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.760277778, -36.346111111
+        ]
+      }, 
+      "properties" : {
+        "FID" : 112, 
+        "Name" : "OMAHA FLATS", 
+        "ICAO_Code" : "NZOF", 
+        "Latitude" : "362046S", 
+        "Longitude" : "1744537E", 
+        "Latitude_D" : -36.3461111111, 
+        "Longitude_" : 174.760277778, 
+        "Lat" : "36 20 46S", 
+        "Lon" : "174 45 37E", 
+        "Lat_D" : -36.3461111111, 
+        "Lon_D" : 174.760277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZOF"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 113, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.921944444, -41.54
+        ]
+      }, 
+      "properties" : {
+        "FID" : 113, 
+        "Name" : "OMAKA", 
+        "ICAO_Code" : "NZOM", 
+        "Latitude" : "413224.0S", 
+        "Longitude" : "1735519.0E", 
+        "Latitude_D" : -41.54, 
+        "Longitude_" : 173.921944444, 
+        "Lat" : "41 32 24.0S", 
+        "Lon" : "173 55 19.0E", 
+        "Lat_D" : -41.54, 
+        "Lon_D" : 173.921944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZOM"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 114, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.986111111, -44.486666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 114, 
+        "Name" : "OMARAMA", 
+        "ICAO_Code" : "NZOA", 
+        "Latitude" : "442912.0S", 
+        "Longitude" : "1695910.0E", 
+        "Latitude_D" : -44.4866666667, 
+        "Longitude_" : 169.986111111, 
+        "Lat" : "44 29 12.0S", 
+        "Lon" : "169 59 10.0E", 
+        "Lat_D" : -44.4866666667, 
+        "Lon_D" : 169.986111111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZOA"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 115, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.664444444, -40.6736111109999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 115, 
+        "Name" : "ONGAIO ISLAND", 
+        "ICAO_Code" : "NZOI", 
+        "Latitude" : "404025S", 
+        "Longitude" : "1723952E", 
+        "Latitude_D" : -40.6736111111, 
+        "Longitude_" : 172.664444444, 
+        "Lat" : "40 40 25S", 
+        "Lon" : "172 39 52E", 
+        "Lat_D" : -40.6736111111, 
+        "Lon_D" : 172.664444444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZOI"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 116, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          177.307222222, -38.0225
+        ]
+      }, 
+      "properties" : {
+        "FID" : 116, 
+        "Name" : "OPOTIKI", 
+        "ICAO_Code" : "NZOP", 
+        "Latitude" : "380121.0S", 
+        "Longitude" : "1771826.0E", 
+        "Latitude_D" : -38.0225, 
+        "Longitude_" : 177.307222222, 
+        "Lat" : "38 01 21.0S", 
+        "Lon" : "177 18 26.0E", 
+        "Lat_D" : -38.0225, 
+        "Lon_D" : 177.307222222, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZOP"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 117, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.151111111, -40.783611111
+        ]
+      }, 
+      "properties" : {
+        "FID" : 117, 
+        "Name" : "OTAKI", 
+        "ICAO_Code" : "NZOT", 
+        "Latitude" : "404701.00S", 
+        "Longitude" : "1750904.00E", 
+        "Latitude_D" : -40.7836111111, 
+        "Longitude_" : 175.151111111, 
+        "Lat" : "40 47 01.00S", 
+        "Lon" : "175 09 04.00E", 
+        "Lat_D" : -40.7836111111, 
+        "Lon_D" : 175.151111111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZOT"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 118, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.230127778, -35.222652778
+        ]
+      }, 
+      "properties" : {
+        "FID" : 118, 
+        "Name" : "OTEHEI BAY", 
+        "ICAO_Code" : "NZOS", 
+        "Latitude" : "351321.55S", 
+        "Longitude" : "1741348.46E", 
+        "Latitude_D" : -35.2226527778, 
+        "Longitude_" : 174.230127778, 
+        "Lat" : "35 13 21.55S", 
+        "Lon" : "174 13 48.46E", 
+        "Lat_D" : -35.2226527778, 
+        "Lon_D" : 174.230127778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZOS"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 119, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.091416667, -35.282305556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 119, 
+        "Name" : "PAIHIA", 
+        "ICAO_Code" : "NZPA", 
+        "Latitude" : "351656.3S", 
+        "Longitude" : "1740529.1E", 
+        "Latitude_D" : -35.2823055556, 
+        "Longitude_" : 174.091416667, 
+        "Lat" : "35 16 56.3S", 
+        "Lon" : "174 05 29.1E", 
+        "Lat_D" : -35.2823055556, 
+        "Lon_D" : 174.091416667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZPA"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 120, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.092947222, -35.281852778
+        ]
+      }, 
+      "properties" : {
+        "FID" : 120, 
+        "Name" : "PAIHIA WATERFRONT", 
+        "ICAO_Code" : "NZPS", 
+        "Latitude" : "351654.67S", 
+        "Longitude" : "1740534.61E", 
+        "Latitude_D" : -35.2818527778, 
+        "Longitude_" : 174.092947222, 
+        "Lat" : "35 16 54.67S", 
+        "Lon" : "174 05 34.61E", 
+        "Lat_D" : -35.2818527778, 
+        "Lon_D" : 174.092947222, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZPS"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 121, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.616944444, -40.3205555559999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 121, 
+        "Name" : "PALMERSTON NORTH", 
+        "ICAO_Code" : "NZPM", 
+        "Latitude" : "401914S", 
+        "Longitude" : "1753701E", 
+        "Latitude_D" : -40.3205555556, 
+        "Longitude_" : 175.616944444, 
+        "Lat" : "40 19 14S", 
+        "Lon" : "175 37 01E", 
+        "Lat_D" : -40.3205555556, 
+        "Lon_D" : 175.616944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZPM"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 122, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.619444444, -40.337777778
+        ]
+      }, 
+      "properties" : {
+        "FID" : 122, 
+        "Name" : "PALMERSTON NORTH HOSPITAL", 
+        "ICAO_Code" : "NZJM", 
+        "Latitude" : "402016.0S", 
+        "Longitude" : "1753710.0E", 
+        "Latitude_D" : -40.3377777778, 
+        "Longitude_" : 175.619444444, 
+        "Lat" : "40 20 16.0S", 
+        "Lon" : "175 37 10.0E", 
+        "Lat_D" : -40.3377777778, 
+        "Lon_D" : 175.619444444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJM"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 123, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.5, -41.1041666669999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 123, 
+        "Name" : "PAPAWAI", 
+        "ICAO_Code" : "NZPW", 
+        "Latitude" : "410615S", 
+        "Longitude" : "1753000E", 
+        "Latitude_D" : -41.1041666667, 
+        "Longitude_" : 175.5, 
+        "Lat" : "41 06 15S", 
+        "Lon" : "175 30 00E", 
+        "Lat_D" : -41.1041666667, 
+        "Lon_D" : 175.5, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZPW"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 124, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.433333333, -36.651666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 124, 
+        "Name" : "PARAKAI", 
+        "ICAO_Code" : "NZPI", 
+        "Latitude" : "363906.0S", 
+        "Longitude" : "1742600.0E", 
+        "Latitude_D" : -36.6516666667, 
+        "Longitude_" : 174.433333333, 
+        "Lat" : "36 39 06.0S", 
+        "Lon" : "174 26 00.0E", 
+        "Lat_D" : -36.6516666667, 
+        "Lon_D" : 174.433333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZPI"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 125, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.989166667, -40.904722222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 125, 
+        "Name" : "PARAPARAUMU", 
+        "ICAO_Code" : "NZPP", 
+        "Latitude" : "405417S", 
+        "Longitude" : "1745921E", 
+        "Latitude_D" : -40.9047222222, 
+        "Longitude_" : 174.989166667, 
+        "Lat" : "40 54 17S", 
+        "Lon" : "174 59 21E", 
+        "Lat_D" : -40.9047222222, 
+        "Lon_D" : 174.989166667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZPP"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 126, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.863611111, -37.021666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 126, 
+        "Name" : "PAUANUI BEACH", 
+        "ICAO_Code" : "NZUN", 
+        "Latitude" : "370118.0S", 
+        "Longitude" : "1755149.0E", 
+        "Latitude_D" : -37.0216666667, 
+        "Longitude_" : 175.863611111, 
+        "Lat" : "37 01 18.0S", 
+        "Lon" : "175 51 49.0E", 
+        "Lat_D" : -37.0216666667, 
+        "Lon_D" : 175.863611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZUN"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 127, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.955277778, -41.3483333329999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 127, 
+        "Name" : "PICTON", 
+        "ICAO_Code" : "NZPN", 
+        "Latitude" : "412054S", 
+        "Longitude" : "1735719E", 
+        "Latitude_D" : -41.3483333333, 
+        "Longitude_" : 173.955277778, 
+        "Lat" : "41 20 54S", 
+        "Lon" : "173 57 19E", 
+        "Lat_D" : -41.3483333333, 
+        "Lon_D" : 173.955277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZPN"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 128, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.813055556, -36.930277778
+        ]
+      }, 
+      "properties" : {
+        "FID" : 128, 
+        "Name" : "PIKES POINT", 
+        "ICAO_Code" : "NZPK", 
+        "Latitude" : "365549S", 
+        "Longitude" : "1744847E", 
+        "Latitude_D" : -36.9302777778, 
+        "Longitude_" : 174.813055556, 
+        "Lat" : "36 55 49S", 
+        "Lon" : "174 48 47E", 
+        "Lat_D" : -36.9302777778, 
+        "Lon_D" : 174.813055556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZPK"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 129, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.6525, -40.280833333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 129, 
+        "Name" : "PORANGAHAU", 
+        "ICAO_Code" : "NZPO", 
+        "Latitude" : "401651.0S", 
+        "Longitude" : "1763909.0E", 
+        "Latitude_D" : -40.2808333333, 
+        "Longitude_" : 176.6525, 
+        "Lat" : "40 16 51.0S", 
+        "Lon" : "176 39 09.0E", 
+        "Lat_D" : -40.2808333333, 
+        "Lon_D" : 176.6525, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZPO"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 130, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          171.527777778, -43.587222222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 130, 
+        "Name" : "PUDDING HILL", 
+        "ICAO_Code" : "NZPH", 
+        "Latitude" : "433514.00S", 
+        "Longitude" : "1713140.00E", 
+        "Latitude_D" : -43.5872222222, 
+        "Longitude_" : 171.527777778, 
+        "Lat" : "43 35 14.00S", 
+        "Lon" : "171 31 40.00E", 
+        "Lat_D" : -43.5872222222, 
+        "Lon_D" : 171.527777778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZPH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 131, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.118333333, -44.235
+        ]
+      }, 
+      "properties" : {
+        "FID" : 131, 
+        "Name" : "PUKAKI", 
+        "ICAO_Code" : "NZUK", 
+        "Latitude" : "441406S", 
+        "Longitude" : "1700706E", 
+        "Latitude_D" : -44.235, 
+        "Longitude_" : 170.118333333, 
+        "Lat" : "44 14 06S", 
+        "Lon" : "170 07 06E", 
+        "Lat_D" : -44.235, 
+        "Lon_D" : 170.118333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZUK"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 132, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.9075, -37.2594444439999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 132, 
+        "Name" : "PUKEKOHE", 
+        "ICAO_Code" : "NZPU", 
+        "Latitude" : "371534S", 
+        "Longitude" : "1745427E", 
+        "Latitude_D" : -37.2594444444, 
+        "Longitude_" : 174.9075, 
+        "Lat" : "37 15 34S", 
+        "Lon" : "174 54 27E", 
+        "Lat_D" : -37.2594444444, 
+        "Lon_D" : 174.9075, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZPU"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 133, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.78, -41.285833333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 133, 
+        "Name" : "QUEENS WHARF", 
+        "ICAO_Code" : "NZQW", 
+        "Latitude" : "411709.0S", 
+        "Longitude" : "1744648.0E", 
+        "Latitude_D" : -41.2858333333, 
+        "Longitude_" : 174.78, 
+        "Lat" : "41 17 09.0S", 
+        "Lon" : "174 46 48.0E", 
+        "Lat_D" : -41.2858333333, 
+        "Lon_D" : 174.78, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZQW"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 134, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.739248167, -45.0212353329999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 134, 
+        "Name" : "QUEENSTOWN", 
+        "ICAO_Code" : "NZQN", 
+        "Latitude" : "450116.4472S", 
+        "Longitude" : "1684421.2934E", 
+        "Latitude_D" : -45.0212353333, 
+        "Longitude_" : 168.739248167, 
+        "Lat" : "45 01 16.4472S", 
+        "Lon" : "168 44 21.2934E", 
+        "Lat_D" : -45.0212353333, 
+        "Lon_D" : 168.739248167, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZQN"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 135, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.86, -37.804722222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 135, 
+        "Name" : "RAGLAN", 
+        "ICAO_Code" : "NZRA", 
+        "Latitude" : "374817.0S", 
+        "Longitude" : "1745136.0E", 
+        "Latitude_D" : -37.8047222222, 
+        "Longitude_" : 174.86, 
+        "Lat" : "37 48 17.0S", 
+        "Lon" : "174 51 36.0E", 
+        "Lat_D" : -37.8047222222, 
+        "Lon_D" : 174.86, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZRA"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 136, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          171.415833333, -44.085
+        ]
+      }, 
+      "properties" : {
+        "FID" : 136, 
+        "Name" : "RAKITATA ISLAND", 
+        "ICAO_Code" : "NZRI", 
+        "Latitude" : "440506.0S", 
+        "Longitude" : "1712457.0E", 
+        "Latitude_D" : -44.085, 
+        "Longitude_" : 171.415833333, 
+        "Lat" : "44 05 06.0S", 
+        "Lon" : "171 24 57.0E", 
+        "Lat_D" : -44.085, 
+        "Lon_D" : 171.415833333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZRI"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 137, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.110683333, -45.129658333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 137, 
+        "Name" : "RANFURLY MEDICAL CENTRE", 
+        "ICAO_Code" : "NZRN", 
+        "Latitude" : "450746.77S", 
+        "Longitude" : "1700638.46E", 
+        "Latitude_D" : -45.1296583333, 
+        "Longitude_" : 170.110683333, 
+        "Lat" : "45 07 46.77S", 
+        "Lon" : "170 06 38.46E", 
+        "Lat_D" : -45.1296583333, 
+        "Lon_D" : 170.110683333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZRN"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 138, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.541666667, -43.2899999999999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 138, 
+        "Name" : "RANGIORA", 
+        "ICAO_Code" : "NZRT", 
+        "Latitude" : "431724.0S", 
+        "Longitude" : "1723230.0E", 
+        "Latitude_D" : -43.29, 
+        "Longitude_" : 172.541666667, 
+        "Lat" : "43 17 24.0S", 
+        "Lon" : "172 32 30.0E", 
+        "Lat_D" : -43.29, 
+        "Lon_D" : 172.541666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZRT"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 139, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.363611111, -38.8866666669999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 139, 
+        "Name" : "RANGITAIKI", 
+        "ICAO_Code" : "NZRK", 
+        "Latitude" : "385312.0S", 
+        "Longitude" : "1762149.0E", 
+        "Latitude_D" : -38.8866666667, 
+        "Longitude_" : 176.363611111, 
+        "Lat" : "38 53 12.0S", 
+        "Lon" : "176 21 49.0E", 
+        "Lat_D" : -38.8866666667, 
+        "Lon_D" : 176.363611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZRK"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 140, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.297666667, -39.9726666669999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 140, 
+        "Name" : "RAROA", 
+        "ICAO_Code" : "NZMX", 
+        "Latitude" : "395821.60S", 
+        "Longitude" : "1731751.60E", 
+        "Latitude_D" : -39.9726666667, 
+        "Longitude_" : 173.297666667, 
+        "Lat" : "39 58 21.60S", 
+        "Lon" : "173 17 51.60E", 
+        "Lat_D" : -39.9726666667, 
+        "Lon_D" : 173.297666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZMX"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 141, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.506333333, -35.407166667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 141, 
+        "Name" : "RAWENE HOSPITAL", 
+        "ICAO_Code" : "NZJW", 
+        "Latitude" : "352425.8S", 
+        "Longitude" : "1733022.8E", 
+        "Latitude_D" : -35.4071666667, 
+        "Longitude_" : 173.506333333, 
+        "Lat" : "35 24 25.8S", 
+        "Lon" : "173 30 22.8E", 
+        "Lat_D" : -35.4071666667, 
+        "Lon_D" : 173.506333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJW"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 142, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.715933333, -36.742586111
+        ]
+      }, 
+      "properties" : {
+        "FID" : 142, 
+        "Name" : "ROSEDALE", 
+        "ICAO_Code" : "NZRD", 
+        "Latitude" : "364433.31S", 
+        "Longitude" : "1744257.36E", 
+        "Latitude_D" : -36.7425861111, 
+        "Longitude_" : 174.715933333, 
+        "Lat" : "36 44 33.31S", 
+        "Lon" : "174 42 57.36E", 
+        "Lat_D" : -36.7425861111, 
+        "Lon_D" : 174.715933333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZRD"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 143, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.317222222, -38.109166667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 143, 
+        "Name" : "ROTORUA", 
+        "ICAO_Code" : "NZRO", 
+        "Latitude" : "380633S", 
+        "Longitude" : "1761902E", 
+        "Latitude_D" : -38.1091666667, 
+        "Longitude_" : 176.317222222, 
+        "Lat" : "38 06 33S", 
+        "Lon" : "176 19 02E", 
+        "Lat_D" : -38.1091666667, 
+        "Lon_D" : 176.317222222, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZRO"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 144, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.246666667, -38.1319444439999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 144, 
+        "Name" : "ROTORUA HOSPITAL", 
+        "ICAO_Code" : "NZJO", 
+        "Latitude" : "380755.0S", 
+        "Longitude" : "1761448.0E", 
+        "Latitude_D" : -38.1319444444, 
+        "Longitude_" : 176.246666667, 
+        "Lat" : "38 07 55.0S", 
+        "Lon" : "176 14 48.0E", 
+        "Lat_D" : -38.1319444444, 
+        "Lon_D" : 176.246666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJO"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 145, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.252777778, -38.1294444439999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 145, 
+        "Name" : "ROTORUA LAKEFRONT", 
+        "ICAO_Code" : "NZLF", 
+        "Latitude" : "380746S", 
+        "Longitude" : "1761510E", 
+        "Latitude_D" : -38.1294444444, 
+        "Longitude_" : 176.252777778, 
+        "Lat" : "38 07 46S", 
+        "Lon" : "176 15 10E", 
+        "Lat_D" : -38.1294444444, 
+        "Lon_D" : 176.252777778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZLF"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 146, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.276388889, -38.113333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 146, 
+        "Name" : "ROTORUA LAKES", 
+        "ICAO_Code" : "NZRL", 
+        "Latitude" : "380648S", 
+        "Longitude" : "1761635E", 
+        "Latitude_D" : -38.1133333333, 
+        "Longitude_" : 176.276388889, 
+        "Lat" : "38 06 48S", 
+        "Lon" : "176 16 35E", 
+        "Lat_D" : -38.1133333333, 
+        "Lon_D" : 176.276388889, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZRL"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 147, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.316666667, -45.511666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 147, 
+        "Name" : "ROXBURGH", 
+        "ICAO_Code" : "NZRX", 
+        "Latitude" : "453042.0S", 
+        "Longitude" : "1691900.0E", 
+        "Latitude_D" : -45.5116666667, 
+        "Longitude_" : 169.316666667, 
+        "Lat" : "45 30 42.0S", 
+        "Lon" : "169 19 00.0E", 
+        "Lat_D" : -45.5116666667, 
+        "Lon_D" : 169.316666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZRX"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 148, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          178.290027778, -37.883963889
+        ]
+      }, 
+      "properties" : {
+        "FID" : 148, 
+        "Name" : "RUATORIA", 
+        "ICAO_Code" : "NZRR", 
+        "Latitude" : "375302.27S", 
+        "Longitude" : "1781724.10E", 
+        "Latitude_D" : -37.8839638889, 
+        "Longitude_" : 178.290027778, 
+        "Lat" : "37 53 02.27S", 
+        "Lon" : "178 17 24.10E", 
+        "Lat_D" : -37.8839638889, 
+        "Lon_D" : 178.290027778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZRR"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 149, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.975277778, -36.095833333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 149, 
+        "Name" : "RUAWAI", 
+        "ICAO_Code" : "NZRW", 
+        "Latitude" : "360545.0S", 
+        "Longitude" : "1735831.0E", 
+        "Latitude_D" : -36.0958333333, 
+        "Longitude_" : 173.975277778, 
+        "Lat" : "36 05 45.0S", 
+        "Lon" : "173 58 31.0E", 
+        "Lat_D" : -36.0958333333, 
+        "Lon_D" : 173.975277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZRW"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 150, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.101944444, -46.899722222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 150, 
+        "Name" : "RYANS CREEK", 
+        "ICAO_Code" : "NZRC", 
+        "Latitude" : "465359S", 
+        "Longitude" : "1680607E", 
+        "Latitude_D" : -46.8997222222, 
+        "Longitude_" : 168.101944444, 
+        "Lat" : "46 53 59S", 
+        "Lon" : "168 06 07E", 
+        "Lat_D" : -46.8997222222, 
+        "Lon_D" : 168.101944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZRC"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 151, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          168.359444444, -46.4372222219999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 151, 
+        "Name" : "SOUTHLAND-KEW HOSPITAL", 
+        "ICAO_Code" : "NZJS", 
+        "Latitude" : "462614.0S", 
+        "Longitude" : "1682134.0E", 
+        "Latitude_D" : -46.4372222222, 
+        "Longitude_" : 168.359444444, 
+        "Lat" : "46 26 14.0S", 
+        "Lon" : "168 21 34.0E", 
+        "Lat_D" : -46.4372222222, 
+        "Lon_D" : 168.359444444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJS"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 152, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          171.911111111, -43.3836111109999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 152, 
+        "Name" : "SPRINGFIELD", 
+        "ICAO_Code" : "NZSF", 
+        "Latitude" : "432301S", 
+        "Longitude" : "1715440E", 
+        "Latitude_D" : -43.3836111111, 
+        "Longitude_" : 171.911111111, 
+        "Lat" : "43 23 01S", 
+        "Lon" : "171 54 40E", 
+        "Lat_D" : -43.3836111111, 
+        "Lon_D" : 171.911111111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZSF"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 153, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.555555556, -36.3249999999999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 153, 
+        "Name" : "SPRINGHILL", 
+        "ICAO_Code" : "NZSL", 
+        "Latitude" : "361930.0S", 
+        "Longitude" : "1743320.0E", 
+        "Latitude_D" : -36.325, 
+        "Longitude_" : 174.555555556, 
+        "Lat" : "36 19 30.0S", 
+        "Lon" : "174 33 20.0E", 
+        "Lat_D" : -36.325, 
+        "Lon_D" : 174.555555556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZSL"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 154, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.310277778, -39.3188888889999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 154, 
+        "Name" : "STRATFORD", 
+        "ICAO_Code" : "NZSD", 
+        "Latitude" : "391908.0S", 
+        "Longitude" : "1741837.0E", 
+        "Latitude_D" : -39.3188888889, 
+        "Longitude_" : 174.310277778, 
+        "Lat" : "39 19 08.0S", 
+        "Lon" : "174 18 37.0E", 
+        "Lat_D" : -39.3188888889, 
+        "Lon_D" : 174.310277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZSD"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 155, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.704444444, -38.170833333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 155, 
+        "Name" : "TAHAROA IRONSANDS", 
+        "ICAO_Code" : "NZAH", 
+        "Latitude" : "381015.0S", 
+        "Longitude" : "1744216.0E", 
+        "Latitude_D" : -38.1708333333, 
+        "Longitude_" : 174.704444444, 
+        "Lat" : "38 10 15.0S", 
+        "Lon" : "174 42 16.0E", 
+        "Lat_D" : -38.1708333333, 
+        "Lon_D" : 174.704444444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZAH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 156, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.358333333, -45.8599999999999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 156, 
+        "Name" : "TAIERI", 
+        "ICAO_Code" : "NZTI", 
+        "Latitude" : "455136S", 
+        "Longitude" : "1702130E", 
+        "Latitude_D" : -45.86, 
+        "Longitude_" : 170.358333333, 
+        "Lat" : "45 51 36S", 
+        "Lon" : "170 21 30E", 
+        "Lat_D" : -45.86, 
+        "Lon_D" : 170.358333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTI"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 157, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.788611111, -39.6849999999999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 157, 
+        "Name" : "TAIHAPE", 
+        "ICAO_Code" : "NZVR", 
+        "Latitude" : "394106.0S", 
+        "Longitude" : "1754719.0E", 
+        "Latitude_D" : -39.685, 
+        "Longitude_" : 175.788611111, 
+        "Lat" : "39 41 06.0S", 
+        "Lon" : "175 47 19.0E", 
+        "Lat_D" : -39.685, 
+        "Lon_D" : 175.788611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZVR"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 158, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.776055556, -40.813416667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 158, 
+        "Name" : "TAKAKA", 
+        "ICAO_Code" : "NZTK", 
+        "Latitude" : "404848.30S", 
+        "Longitude" : "1724633.80E", 
+        "Latitude_D" : -40.8134166667, 
+        "Longitude_" : 172.776055556, 
+        "Lat" : "40 48 48.30S", 
+        "Lon" : "172 46 33.80E", 
+        "Lat_D" : -40.8134166667, 
+        "Lon_D" : 172.776055556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTK"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 159, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.263333333, -45.938055556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 159, 
+        "Name" : "TAPANUI MEDICAL CENTRE", 
+        "ICAO_Code" : "NZTC", 
+        "Latitude" : "455617.00S", 
+        "Longitude" : "1691548.00E", 
+        "Latitude_D" : -45.9380555556, 
+        "Longitude_" : 169.263333333, 
+        "Lat" : "45 56 17.00S", 
+        "Lon" : "169 15 48.00E", 
+        "Lat_D" : -45.9380555556, 
+        "Lon_D" : 169.263333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTC"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 160, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.055277778, -39.0733333329999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 160, 
+        "Name" : "TARANAKI BASE HOSPITAL", 
+        "ICAO_Code" : "NZJQ", 
+        "Latitude" : "390424.0S", 
+        "Longitude" : "1740319.0E", 
+        "Latitude_D" : -39.0733333333, 
+        "Longitude_" : 174.055277778, 
+        "Lat" : "39 04 24.0S", 
+        "Lon" : "174 03 19.0E", 
+        "Lat_D" : -39.0733333333, 
+        "Lon_D" : 174.055277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJQ"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 161, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.049366667, -41.204561111
+        ]
+      }, 
+      "properties" : {
+        "FID" : 161, 
+        "Name" : "TASMAN", 
+        "ICAO_Code" : "NZTS", 
+        "Latitude" : "411216.42S", 
+        "Longitude" : "1730257.72E", 
+        "Latitude_D" : -41.2045611111, 
+        "Longitude_" : 173.049366667, 
+        "Lat" : "41 12 16.42S", 
+        "Lon" : "173 02 57.72E", 
+        "Lat_D" : -41.2045611111, 
+        "Lon_D" : 173.049366667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTS"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 162, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.255277778, -38.843333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 162, 
+        "Name" : "TAUMARUNUI", 
+        "ICAO_Code" : "NZTM", 
+        "Latitude" : "385036.0S", 
+        "Longitude" : "1751519.0E", 
+        "Latitude_D" : -38.8433333333, 
+        "Longitude_" : 175.255277778, 
+        "Lat" : "38 50 36.0S", 
+        "Lon" : "175 15 19.0E", 
+        "Lat_D" : -38.8433333333, 
+        "Lon_D" : 175.255277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTM"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 163, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.251388889, -38.889722222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 163, 
+        "Name" : "TAUMARUNUI HOSPITAL", 
+        "ICAO_Code" : "NZJT", 
+        "Latitude" : "385323S", 
+        "Longitude" : "1751505E", 
+        "Latitude_D" : -38.8897222222, 
+        "Longitude_" : 175.251388889, 
+        "Lat" : "38 53 23S", 
+        "Lon" : "175 15 05E", 
+        "Lat_D" : -38.8897222222, 
+        "Lon_D" : 175.251388889, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJT"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 164, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.084444444, -38.739722222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 164, 
+        "Name" : "TAUPO", 
+        "ICAO_Code" : "NZAP", 
+        "Latitude" : "384423S", 
+        "Longitude" : "1760504E", 
+        "Latitude_D" : -38.7397222222, 
+        "Longitude_" : 176.084444444, 
+        "Lat" : "38 44 23S", 
+        "Lon" : "176 05 04E", 
+        "Lat_D" : -38.7397222222, 
+        "Lon_D" : 176.084444444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZAP"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 165, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.098888889, -38.6986111109999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 165, 
+        "Name" : "TAUPO HOSPITAL", 
+        "ICAO_Code" : "NZJZ", 
+        "Latitude" : "384155.0S", 
+        "Longitude" : "1760556.0E", 
+        "Latitude_D" : -38.6986111111, 
+        "Longitude_" : 176.098888889, 
+        "Lat" : "38 41 55.0S", 
+        "Lon" : "176 05 56.0E", 
+        "Lat_D" : -38.6986111111, 
+        "Lon_D" : 176.098888889, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJZ"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 166, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.035, -38.731666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 166, 
+        "Name" : "TAUPO WATER", 
+        "ICAO_Code" : "NZLT", 
+        "Latitude" : "384354.0S", 
+        "Longitude" : "1760206.0E", 
+        "Latitude_D" : -38.7316666667, 
+        "Longitude_" : 176.035, 
+        "Lat" : "38 43 54.0S", 
+        "Lon" : "176 02 06.0E", 
+        "Lat_D" : -38.7316666667, 
+        "Lon_D" : 176.035, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZLT"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 167, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.196111111, -37.671944444
+        ]
+      }, 
+      "properties" : {
+        "FID" : 167, 
+        "Name" : "TAURANGA", 
+        "ICAO_Code" : "NZTG", 
+        "Latitude" : "374019.0S", 
+        "Longitude" : "1761146.0E", 
+        "Latitude_D" : -37.6719444444, 
+        "Longitude_" : 176.196111111, 
+        "Lat" : "37 40 19.0S", 
+        "Lon" : "176 11 46.0E", 
+        "Lat_D" : -37.6719444444, 
+        "Lon_D" : 176.196111111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTG"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 168, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.148055556, -37.7069444439999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 168, 
+        "Name" : "TAURANGA HOSPITAL", 
+        "ICAO_Code" : "NZJA", 
+        "Latitude" : "374225.0S", 
+        "Longitude" : "1760853.0E", 
+        "Latitude_D" : -37.7069444444, 
+        "Longitude_" : 176.148055556, 
+        "Lat" : "37 42 25.0S", 
+        "Lon" : "176 08 53.0E", 
+        "Lat_D" : -37.7069444444, 
+        "Lon_D" : 176.148055556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJA"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 169, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          167.65, -45.533055556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 169, 
+        "Name" : "TE ANAU / MANAPOURI", 
+        "ICAO_Code" : "NZMO", 
+        "Latitude" : "453159S", 
+        "Longitude" : "1673900E", 
+        "Latitude_D" : -45.5330555556, 
+        "Longitude_" : 167.65, 
+        "Lat" : "45 31 59S", 
+        "Lon" : "167 39 00E", 
+        "Lat_D" : -45.5330555556, 
+        "Lon_D" : 167.65, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZMO"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 170, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          167.719894444, -45.416180556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 170, 
+        "Name" : "TE ANAU MEDICAL CENTRE", 
+        "ICAO_Code" : "NZTX", 
+        "Latitude" : "452458.25S", 
+        "Longitude" : "1674311.62E", 
+        "Latitude_D" : -45.4161805556, 
+        "Longitude_" : 167.719894444, 
+        "Lat" : "45 24 58.25S", 
+        "Lon" : "167 43 11.62E", 
+        "Lat_D" : -45.4161805556, 
+        "Lon_D" : 167.719894444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTX"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 171, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          178.3475, -37.629166667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 171, 
+        "Name" : "TE ARAROA", 
+        "ICAO_Code" : "NZTR", 
+        "Latitude" : "373745S", 
+        "Longitude" : "1782051E", 
+        "Latitude_D" : -37.6291666667, 
+        "Longitude_" : 178.3475, 
+        "Lat" : "37 37 45S", 
+        "Lon" : "178 20 51E", 
+        "Lat_D" : -37.6291666667, 
+        "Lon_D" : 178.3475, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTR"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 172, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.158611111, -37.745
+        ]
+      }, 
+      "properties" : {
+        "FID" : 172, 
+        "Name" : "TE KOWHAI", 
+        "ICAO_Code" : "NZTE", 
+        "Latitude" : "374442.0S", 
+        "Longitude" : "1750931.0E", 
+        "Latitude_D" : -37.745, 
+        "Longitude_" : 175.158611111, 
+        "Lat" : "37 44 42.0S", 
+        "Lon" : "175 09 31.0E", 
+        "Lat_D" : -37.745, 
+        "Lon_D" : 175.158611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTE"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 173, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.146944444, -38.303333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 173, 
+        "Name" : "TE KUITI", 
+        "ICAO_Code" : "NZTT", 
+        "Latitude" : "381812S", 
+        "Longitude" : "1750849E", 
+        "Latitude_D" : -38.3033333333, 
+        "Longitude_" : 175.146944444, 
+        "Lat" : "38 18 12S", 
+        "Lon" : "175 08 49E", 
+        "Lat_D" : -38.3033333333, 
+        "Lon_D" : 175.146944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTT"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 174, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.151813889, -38.333788889
+        ]
+      }, 
+      "properties" : {
+        "FID" : 174, 
+        "Name" : "TE KUITI HOSPITAL", 
+        "ICAO_Code" : "NZTQ", 
+        "Latitude" : "382001.64S", 
+        "Longitude" : "1750906.53E", 
+        "Latitude_D" : -38.3337888889, 
+        "Longitude_" : 175.151813889, 
+        "Lat" : "38 20 01.64S", 
+        "Lon" : "175 09 06.53E", 
+        "Lat_D" : -38.3337888889, 
+        "Lon_D" : 175.151813889, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTQ"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 175, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          178.304425, -38.054844444
+        ]
+      }, 
+      "properties" : {
+        "FID" : 175, 
+        "Name" : "TE PUIA SPRINGS HOSPITAL", 
+        "ICAO_Code" : "NZJP", 
+        "Latitude" : "380317.44S", 
+        "Longitude" : "1781815.93E", 
+        "Latitude_D" : -38.0548444444, 
+        "Longitude_" : 178.304425, 
+        "Lat" : "38 03 17.44S", 
+        "Lon" : "178 18 15.93E", 
+        "Lat_D" : -38.0548444444, 
+        "Lon_D" : 178.304425, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJP"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 176, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.441666667, -44.0049999999999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 176, 
+        "Name" : "TEKAPO", 
+        "ICAO_Code" : "NZTL", 
+        "Latitude" : "440018.0S", 
+        "Longitude" : "1702630.0E", 
+        "Latitude_D" : -44.005, 
+        "Longitude_" : 170.441666667, 
+        "Lat" : "44 00 18.0S", 
+        "Lon" : "170 26 30.0E", 
+        "Lat_D" : -44.005, 
+        "Lon_D" : 170.441666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTL"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 177, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.406666667, -44.0127777779999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 177, 
+        "Name" : "TEKAPO / MACKENZIE", 
+        "ICAO_Code" : "NZTP", 
+        "Latitude" : "440046S", 
+        "Longitude" : "1702424E", 
+        "Latitude_D" : -44.0127777778, 
+        "Longitude_" : 170.406666667, 
+        "Lat" : "44 00 46S", 
+        "Lon" : "170 24 24E", 
+        "Lat_D" : -44.0127777778, 
+        "Lon_D" : 170.406666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTP"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 178, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.550277778, -37.156666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 178, 
+        "Name" : "THAMES", 
+        "ICAO_Code" : "NZTH", 
+        "Latitude" : "370924S", 
+        "Longitude" : "1753301E", 
+        "Latitude_D" : -37.1566666667, 
+        "Longitude_" : 175.550277778, 
+        "Lat" : "37 09 24S", 
+        "Lon" : "175 33 01E", 
+        "Lat_D" : -37.1566666667, 
+        "Lon_D" : 175.550277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 179, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.544527778, -37.1358333329999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 179, 
+        "Name" : "THAMES HOSPITAL", 
+        "ICAO_Code" : "NZJD", 
+        "Latitude" : "370809.00S", 
+        "Longitude" : "1753240.30E", 
+        "Latitude_D" : -37.1358333333, 
+        "Longitude_" : 175.544527778, 
+        "Lat" : "37 08 09.00S", 
+        "Lon" : "175 32 40.30E", 
+        "Lat_D" : -37.1358333333, 
+        "Lon_D" : 175.544527778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJD"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 180, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          171.225277778, -44.302777778
+        ]
+      }, 
+      "properties" : {
+        "FID" : 180, 
+        "Name" : "TIMARU", 
+        "ICAO_Code" : "NZTU", 
+        "Latitude" : "441810S", 
+        "Longitude" : "1711331E", 
+        "Latitude_D" : -44.3027777778, 
+        "Longitude_" : 171.225277778, 
+        "Lat" : "44 18 10S", 
+        "Lon" : "171 13 31E", 
+        "Lat_D" : -44.3027777778, 
+        "Lon_D" : 171.225277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTU"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 181, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          171.255527778, -44.409194444
+        ]
+      }, 
+      "properties" : {
+        "FID" : 181, 
+        "Name" : "TIMARU HOSPITAL", 
+        "ICAO_Code" : "NZTZ", 
+        "Latitude" : "442433.10S", 
+        "Longitude" : "1711519.90E", 
+        "Latitude_D" : -44.4091944444, 
+        "Longitude_" : 171.255527778, 
+        "Lat" : "44 24 33.10S", 
+        "Lon" : "171 15 19.90E", 
+        "Lat_D" : -44.4091944444, 
+        "Lon_D" : 171.255527778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTZ"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 182, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.892777778, -38.236666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 182, 
+        "Name" : "TOKOROA", 
+        "ICAO_Code" : "NZTO", 
+        "Latitude" : "381412S", 
+        "Longitude" : "1755334E", 
+        "Latitude_D" : -38.2366666667, 
+        "Longitude_" : 175.892777778, 
+        "Lat" : "38 14 12S", 
+        "Lon" : "175 53 34E", 
+        "Lat_D" : -38.2366666667, 
+        "Lon_D" : 175.892777778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTO"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 183, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.860833333, -38.231944444
+        ]
+      }, 
+      "properties" : {
+        "FID" : 183, 
+        "Name" : "TOKOROA HOSPITAL", 
+        "ICAO_Code" : "NZJX", 
+        "Latitude" : "381355.0S", 
+        "Longitude" : "1755139.0E", 
+        "Latitude_D" : -38.2319444444, 
+        "Longitude_" : 175.860833333, 
+        "Lat" : "38 13 55.0S", 
+        "Lon" : "175 51 39.0E", 
+        "Lat_D" : -38.2319444444, 
+        "Lon_D" : 175.860833333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJX"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 184, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.813611111, -38.968333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 184, 
+        "Name" : "TURANGI", 
+        "ICAO_Code" : "NZTN", 
+        "Latitude" : "385806.0S", 
+        "Longitude" : "1754849.0E", 
+        "Latitude_D" : -38.9683333333, 
+        "Longitude_" : 175.813611111, 
+        "Lat" : "38 58 06.0S", 
+        "Lon" : "175 48 49.0E", 
+        "Lat_D" : -38.9683333333, 
+        "Lon_D" : 175.813611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTN"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 185, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          170.097761111, -44.261108333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 185, 
+        "Name" : "TWIZEL MEDICAL CENTRE", 
+        "ICAO_Code" : "NZTW", 
+        "Latitude" : "441539.99S", 
+        "Longitude" : "1700551.94E", 
+        "Latitude_D" : -44.2611083333, 
+        "Longitude_" : 170.097761111, 
+        "Lat" : "44 15 39.99S", 
+        "Lon" : "170 05 51.94E", 
+        "Lat_D" : -44.2611083333, 
+        "Lon_D" : 170.097761111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZTW"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 186, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.085277778, -36.808333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 186, 
+        "Name" : "WAIHEKE", 
+        "ICAO_Code" : "NZKE", 
+        "Latitude" : "364830.0S", 
+        "Longitude" : "1750507.0E", 
+        "Latitude_D" : -36.8083333333, 
+        "Longitude_" : 175.085277778, 
+        "Lat" : "36 48 30.0S", 
+        "Lon" : "175 05 07.0E", 
+        "Lat_D" : -36.8083333333, 
+        "Lon_D" : 175.085277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZKE"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 187, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.951944444, -37.43
+        ]
+      }, 
+      "properties" : {
+        "FID" : 187, 
+        "Name" : "WAIHI BEACH", 
+        "ICAO_Code" : "NZWV", 
+        "Latitude" : "372548.0S", 
+        "Longitude" : "1755707.0E", 
+        "Latitude_D" : -37.43, 
+        "Longitude_" : 175.951944444, 
+        "Lat" : "37 25 48.0S", 
+        "Lon" : "175 57 07.0E", 
+        "Lat_D" : -37.43, 
+        "Lon_D" : 175.951944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWV"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 188, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.280897222, -37.8062805559999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 188, 
+        "Name" : "WAIKATO HOSPITAL", 
+        "ICAO_Code" : "NZHH", 
+        "Latitude" : "374822.61S", 
+        "Longitude" : "1751651.23E", 
+        "Latitude_D" : -37.8062805556, 
+        "Longitude_" : 175.280897222, 
+        "Lat" : "37 48 22.61S", 
+        "Lon" : "175 16 51.23E", 
+        "Lat_D" : -37.8062805556, 
+        "Lon_D" : 175.280897222, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZHH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 189, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          171.091666667, -44.79
+        ]
+      }, 
+      "properties" : {
+        "FID" : 189, 
+        "Name" : "WAIMATE", 
+        "ICAO_Code" : "NZWM", 
+        "Latitude" : "444724.0S", 
+        "Longitude" : "1710530.0E", 
+        "Latitude_D" : -44.79, 
+        "Longitude_" : 171.091666667, 
+        "Lat" : "44 47 24.0S", 
+        "Lon" : "171 05 30.0E", 
+        "Lat_D" : -44.79, 
+        "Lon_D" : 171.091666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWM"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 190, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.536944444, -39.9966666669999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 190, 
+        "Name" : "WAIPUKURAU", 
+        "ICAO_Code" : "NZYP", 
+        "Latitude" : "395948.0S", 
+        "Longitude" : "1763213.0E", 
+        "Latitude_D" : -39.9966666667, 
+        "Longitude_" : 176.536944444, 
+        "Lat" : "39 59 48.0S", 
+        "Lon" : "176 32 13.0E", 
+        "Lat_D" : -39.9966666667, 
+        "Lon_D" : 176.536944444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZYP"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 191, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.675277778, -40.9474999999999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 191, 
+        "Name" : "WAIRARAPA HOSPITAL", 
+        "ICAO_Code" : "NZMH", 
+        "Latitude" : "405651.0S", 
+        "Longitude" : "1754031.0E", 
+        "Latitude_D" : -40.9475, 
+        "Longitude_" : 175.675277778, 
+        "Lat" : "40 56 51.0S", 
+        "Lon" : "175 40 31.0E", 
+        "Lat_D" : -40.9475, 
+        "Lon_D" : 175.675277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZMH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 192, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.943611111, -41.536666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 192, 
+        "Name" : "WAIRAU HOSPITAL", 
+        "ICAO_Code" : "NZJB", 
+        "Latitude" : "413212.0S", 
+        "Longitude" : "1735637.0E", 
+        "Latitude_D" : -41.5366666667, 
+        "Longitude_" : 173.943611111, 
+        "Lat" : "41 32 12.0S", 
+        "Lon" : "173 56 37.0E", 
+        "Lat_D" : -41.5366666667, 
+        "Lon_D" : 173.943611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJB"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 193, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          177.404180333, -39.0153397779999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 193, 
+        "Name" : "WAIROA", 
+        "ICAO_Code" : "NZWO", 
+        "Latitude" : "390055.2232S", 
+        "Longitude" : "1772415.0492E", 
+        "Latitude_D" : -39.0153397778, 
+        "Longitude_" : 177.404180333, 
+        "Lat" : "39 00 55.2232S", 
+        "Lon" : "177 24 15.0492E", 
+        "Lat_D" : -39.0153397778, 
+        "Lon_D" : 177.404180333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWO"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 194, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          177.414166667, -39.0425
+        ]
+      }, 
+      "properties" : {
+        "FID" : 194, 
+        "Name" : "WAIROA HOSPITAL", 
+        "ICAO_Code" : "NZJY", 
+        "Latitude" : "390233.0S", 
+        "Longitude" : "1772451.0E", 
+        "Latitude_D" : -39.0425, 
+        "Longitude_" : 177.414166667, 
+        "Lat" : "39 02 33.0S", 
+        "Lon" : "177 24 51.0E", 
+        "Lat_D" : -39.0425, 
+        "Lon_D" : 177.414166667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJY"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 195, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.838333333, -34.526944444
+        ]
+      }, 
+      "properties" : {
+        "FID" : 195, 
+        "Name" : "WAITIKI", 
+        "ICAO_Code" : "NZWQ", 
+        "Latitude" : "343137S", 
+        "Longitude" : "1725018E", 
+        "Latitude_D" : -34.5269444444, 
+        "Longitude_" : 172.838333333, 
+        "Lat" : "34 31 37S", 
+        "Lon" : "172 50 18E", 
+        "Lat_D" : -34.5269444444, 
+        "Lon_D" : 172.838333333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWQ"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 196, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.245555556, -44.722222222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 196, 
+        "Name" : "WANAKA", 
+        "ICAO_Code" : "NZWF", 
+        "Latitude" : "444320S", 
+        "Longitude" : "1691444E", 
+        "Latitude_D" : -44.7222222222, 
+        "Longitude_" : 169.245555556, 
+        "Lat" : "44 43 20S", 
+        "Lon" : "169 14 44E", 
+        "Lat_D" : -44.7222222222, 
+        "Lon_D" : 169.245555556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWF"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 197, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          169.136508333, -44.709333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 197, 
+        "Name" : "WANAKA LAKES HEALTH CENTRE", 
+        "ICAO_Code" : "NZHC", 
+        "Latitude" : "444233.60S", 
+        "Longitude" : "1690811.43E", 
+        "Latitude_D" : -44.7093333333, 
+        "Longitude_" : 169.136508333, 
+        "Lat" : "44 42 33.60S", 
+        "Lon" : "169 08 11.43E", 
+        "Lat_D" : -44.7093333333, 
+        "Lon_D" : 169.136508333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZHC"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 198, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.658655556, -36.397705556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 198, 
+        "Name" : "WARKWORTH", 
+        "ICAO_Code" : "NZWZ", 
+        "Latitude" : "362351.74S", 
+        "Longitude" : "1743931.16E", 
+        "Latitude_D" : -36.3977055556, 
+        "Longitude_" : 174.658655556, 
+        "Lat" : "36 23 51.74S", 
+        "Lon" : "174 39 31.16E", 
+        "Lat_D" : -36.3977055556, 
+        "Lon_D" : 174.658655556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWZ"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 199, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.805277778, -41.3272222219999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 199, 
+        "Name" : "WELLINGTON", 
+        "ICAO_Code" : "NZWN", 
+        "Latitude" : "411938S", 
+        "Longitude" : "1744819E", 
+        "Latitude_D" : -41.3272222222, 
+        "Longitude_" : 174.805277778, 
+        "Lat" : "41 19 38S", 
+        "Lon" : "174 48 19E", 
+        "Lat_D" : -41.3272222222, 
+        "Lon_D" : 174.805277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWN"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 200, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.779444444, -41.308333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 200, 
+        "Name" : "WELLINGTON HOSPITAL", 
+        "ICAO_Code" : "NZWH", 
+        "Latitude" : "411830.0S", 
+        "Longitude" : "1744646.0E", 
+        "Latitude_D" : -41.3083333333, 
+        "Longitude_" : 174.779444444, 
+        "Lat" : "41 18 30.0S", 
+        "Lon" : "174 46 46.0E", 
+        "Lat_D" : -41.3083333333, 
+        "Lon_D" : 174.779444444, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWH"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 201, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.522916667, -36.297055556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 201, 
+        "Name" : "WELLSFORD", 
+        "ICAO_Code" : "NZWJ", 
+        "Latitude" : "361749.4S", 
+        "Longitude" : "1743122.5E", 
+        "Latitude_D" : -36.2970555556, 
+        "Longitude_" : 174.522916667, 
+        "Lat" : "36 17 49.4S", 
+        "Lon" : "174 31 22.5E", 
+        "Lat_D" : -36.2970555556, 
+        "Lon_D" : 174.522916667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWJ"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 202, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          172.396666667, -43.476666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 202, 
+        "Name" : "WEST MELTON", 
+        "ICAO_Code" : "NZWL", 
+        "Latitude" : "432836.0S", 
+        "Longitude" : "1722348.0E", 
+        "Latitude_D" : -43.4766666667, 
+        "Longitude_" : 172.396666667, 
+        "Lat" : "43 28 36.0S", 
+        "Lon" : "172 23 48.0E", 
+        "Lat_D" : -43.4766666667, 
+        "Lon_D" : 172.396666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWL"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 203, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          171.580833333, -41.738055556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 203, 
+        "Name" : "WESTPORT", 
+        "ICAO_Code" : "NZWS", 
+        "Latitude" : "414417S", 
+        "Longitude" : "1713451E", 
+        "Latitude_D" : -41.7380555556, 
+        "Longitude_" : 171.580833333, 
+        "Lat" : "41 44 17S", 
+        "Lon" : "171 34 51E", 
+        "Lat_D" : -41.7380555556, 
+        "Lon_D" : 171.580833333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWS"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 204, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.913216667, -37.920147222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 204, 
+        "Name" : "WHAKATANE", 
+        "ICAO_Code" : "NZWK", 
+        "Latitude" : "375512.53S", 
+        "Longitude" : "1765447.58E", 
+        "Latitude_D" : -37.9201472222, 
+        "Longitude_" : 176.913216667, 
+        "Lat" : "37 55 12.53S", 
+        "Lon" : "176 54 47.58E", 
+        "Lat_D" : -37.9201472222, 
+        "Lon_D" : 176.913216667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWK"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 205, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          176.976666667, -37.965555556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 205, 
+        "Name" : "WHAKATANE HOSPITAL", 
+        "ICAO_Code" : "NZJF", 
+        "Latitude" : "375756S", 
+        "Longitude" : "1765836E", 
+        "Latitude_D" : -37.9655555556, 
+        "Longitude_" : 176.976666667, 
+        "Lat" : "37 57 56S", 
+        "Lon" : "176 58 36E", 
+        "Lat_D" : -37.9655555556, 
+        "Lon_D" : 176.976666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJF"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 206, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.866666667, -37.200555556
+        ]
+      }, 
+      "properties" : {
+        "FID" : 206, 
+        "Name" : "WHANGAMATA", 
+        "ICAO_Code" : "NZWG", 
+        "Latitude" : "371202.00S", 
+        "Longitude" : "1755200.00E", 
+        "Latitude_D" : -37.2005555556, 
+        "Longitude_" : 175.866666667, 
+        "Lat" : "37 12 02.00S", 
+        "Lon" : "175 52 00.00E", 
+        "Lat_D" : -37.2005555556, 
+        "Lon_D" : 175.866666667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWG"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 207, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.025277778, -39.962222222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 207, 
+        "Name" : "WHANGANUI", 
+        "ICAO_Code" : "NZWU", 
+        "Latitude" : "395744S", 
+        "Longitude" : "1750131E", 
+        "Latitude_D" : -39.9622222222, 
+        "Longitude_" : 175.025277778, 
+        "Lat" : "39 57 44S", 
+        "Lon" : "175 01 31E", 
+        "Lat_D" : -39.9622222222, 
+        "Lon_D" : 175.025277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWU"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 208, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.039166667, -39.943333333
+        ]
+      }, 
+      "properties" : {
+        "FID" : 208, 
+        "Name" : "WHANGANUI HOSPITAL", 
+        "ICAO_Code" : "NZJU", 
+        "Latitude" : "395636.0S", 
+        "Longitude" : "1750221.0E", 
+        "Latitude_D" : -39.9433333333, 
+        "Longitude_" : 175.039166667, 
+        "Lat" : "39 56 36.0S", 
+        "Lon" : "175 02 21.0E", 
+        "Lat_D" : -39.9433333333, 
+        "Lon_D" : 175.039166667, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJU"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 209, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.365, -35.7683333329999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 209, 
+        "Name" : "WHANGAREI", 
+        "ICAO_Code" : "NZWR", 
+        "Latitude" : "354606S", 
+        "Longitude" : "1742154E", 
+        "Latitude_D" : -35.7683333333, 
+        "Longitude_" : 174.365, 
+        "Lat" : "35 46 06S", 
+        "Lon" : "174 21 54E", 
+        "Lat_D" : -35.7683333333, 
+        "Lon_D" : 174.365, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWR"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 210, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.303055556, -35.734722222
+        ]
+      }, 
+      "properties" : {
+        "FID" : 210, 
+        "Name" : "WHANGAREI HOSPITAL", 
+        "ICAO_Code" : "NZJR", 
+        "Latitude" : "354405.0S", 
+        "Longitude" : "1741811.0E", 
+        "Latitude_D" : -35.7347222222, 
+        "Longitude_" : 174.303055556, 
+        "Lat" : "35 44 05.0S", 
+        "Lon" : "174 18 11.0E", 
+        "Lat_D" : -35.7347222222, 
+        "Lon_D" : 174.303055556, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZJR"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 211, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.550277778, -38.143888889
+        ]
+      }, 
+      "properties" : {
+        "FID" : 211, 
+        "Name" : "WHAREPAPA SOUTH", 
+        "ICAO_Code" : "NZES", 
+        "Latitude" : "380838.0S", 
+        "Longitude" : "1753301.0E", 
+        "Latitude_D" : -38.1438888889, 
+        "Longitude_" : 175.550277778, 
+        "Lat" : "38 08 38.0S", 
+        "Lon" : "175 33 01.0E", 
+        "Lat_D" : -38.1438888889, 
+        "Lon_D" : 175.550277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZES"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 212, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          174.630258333, -36.7877694439999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 212, 
+        "Name" : "WHENUAPAI", 
+        "ICAO_Code" : "NZWP", 
+        "Latitude" : "364715.97S", 
+        "Longitude" : "1743748.93E", 
+        "Latitude_D" : -36.7877694444, 
+        "Longitude_" : 174.630258333, 
+        "Lat" : "36 47 15.97S", 
+        "Lon" : "174 37 48.93E", 
+        "Lat_D" : -36.7877694444, 
+        "Lon_D" : 174.630258333, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWP"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 213, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          175.678611111, -36.831666667
+        ]
+      }, 
+      "properties" : {
+        "FID" : 213, 
+        "Name" : "WHITIANGA", 
+        "ICAO_Code" : "NZWT", 
+        "Latitude" : "364954S", 
+        "Longitude" : "1754043E", 
+        "Latitude_D" : -36.8316666667, 
+        "Longitude_" : 175.678611111, 
+        "Lat" : "36 49 54S", 
+        "Lon" : "175 40 43E", 
+        "Lat_D" : -36.8316666667, 
+        "Lon_D" : 175.678611111, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWT"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 214, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          173.870277778, -41.5183333329999
+        ]
+      }, 
+      "properties" : {
+        "FID" : 214, 
+        "Name" : "WOODBOURNE", 
+        "ICAO_Code" : "NZWB", 
+        "Latitude" : "413106S", 
+        "Longitude" : "1735213E", 
+        "Latitude_D" : -41.5183333333, 
+        "Longitude_" : 173.870277778, 
+        "Lat" : "41 31 06S", 
+        "Lon" : "173 52 13E", 
+        "Lat_D" : -41.5183333333, 
+        "Lon_D" : 173.870277778, 
+        "AIP_Link" : "https://www.aip.net.nz/document-category/Aerodrome-Charts#NZWB"
+      }
+    }
+  ]
+}
