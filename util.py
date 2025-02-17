@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 
+from glob import glob
+import shutil
 import geopandas as gpd  # Geospatial data
 import pandas as pd  # Tabular data
 import numpy as np  # Linear model
+from shapely import LineString
+from shapelysmooth import taubin_smooth
 from sklearn.linear_model import LinearRegression
 import math
 from shapely.geometry import Point, Polygon
@@ -27,13 +31,14 @@ SUPPORTED_MODELS = ["linear", "sqrt", "BH", "Sunamura"]
 
 
 def enrich_df(df: pd.DataFrame):
-    df["Date"] = pd.to_datetime(df.ShorelineI, dayfirst=True)
+    df["Date"] = pd.to_datetime(df.ShorelineI, dayfirst=False)
     df["Year"] = df.Date.dt.year
     df["YearsSinceBase"] = (df.Date - pd.Timestamp(BASE_YEAR, 1, 1)).dt.days / 365.25
     df["YearsUntilFuture"] = (
         pd.Timestamp(FUTURE_YEAR, 1, 1) - df.Date
     ).dt.days / 365.25
     df.Date = df.Date.astype(str)
+    df["TransectID"] = df.Unique_ID.astype(np.int64)
     return df
 
 
@@ -116,6 +121,8 @@ def predict(
     for i, row in linear_models.iterrows():
         transect_ID = row.TransectID
         transect_df = df[df.TransectID == transect_ID]
+        proxy = ",".join(str(p) for p in sorted(transect_df.Proxy.unique()))
+        
         latest_row = transect_df[transect_df.Date == transect_df["Date"].max()].iloc[0]
         future_year = int(row.get("FUTURE_YEAR", FUTURE_YEAR))
         result = row.to_dict()
@@ -123,6 +130,7 @@ def predict(
             "TransectID": transect_ID,
             "BaselineID": latest_row.BaselineID,
             "group": row.group,
+            "proxy": proxy,
             "Year": future_year,
             "ocean_point": calculate_new_coordinates(
                 latest_row.geometry.x,
@@ -181,31 +189,48 @@ def prediction_results_to_polygon(results: gpd.GeoDataFrame):
     polygons = gpd.GeoSeries(polygons, crs=2193)
     return polygons
 
+#Line and polygon shapefiles are created here 
+def prediction_results_to_line_polygon(results: gpd.GeoDataFrame):
+    lines = []
+    polygons = []
+    for group_name, group_data in results.groupby(["BaselineID", "group"]):
+        if len(group_data) > 1:
+            line = LineString(list(group_data.geometry))
+            lines.append(line)
+            polygon = Polygon(list(group_data.geometry) + list(group_data.ocean_point)[::-1])
+            polygons.append(polygon)
+    lines = gpd.GeoSeries(lines, crs=2193)
+    polygons = gpd.GeoSeries(polygons, crs=2193)
+    return lines, polygons
 
-def get_transect_metadata(transect_lines_shapefile: str):
-    lines = gpd.read_file(transect_lines_shapefile)
-    if "TransectID" in lines.columns:
-        lines = lines.set_index("TransectID").sort_index()
-    else:
-        lines = lines.set_index("TransOrder").sort_index()
+
+def get_transect_metadata(lines):
     lines["dist_to_neighbour"] = lines.distance(lines.shift(-1))
-    breakpoints = lines.dist_to_neighbour[lines.dist_to_neighbour > 105]
+    breakpoints = lines.dist_to_neighbour[lines.dist_to_neighbour > 20]
     lines["group"] = pd.Series(range(len(breakpoints)), index=breakpoints.index)
     lines["group"] = lines.group.bfill().fillna(len(breakpoints)).astype(int)
     metadata = lines[["Azimuth", "group"]].to_dict(orient="index")
     return metadata
 
+def get_transects(intersects):
+  p1 = intersects.geometry[intersects.Distance.idxmin()].coords[0]
+  p2 = intersects.geometry[intersects.Distance.idxmax()].coords[0]
+  azimuth = math.degrees(math.atan2(p1[0]-p2[0], p1[1]-p2[1]))
+  if azimuth < 0:
+      azimuth += 360
+  return pd.Series({"Azimuth": azimuth, "geometry": LineString([p1, p2])})
 
-def process_file(index_and_row, moving_average=True, fix_accretion=True):
-    i, row = index_and_row
 
-    SLR_rate_column_names = row.index[row.index.str.startswith("Rate SSP")]
-
-    site = row.match
-    gdf = gpd.read_file(f"Shapefiles/{site}_intersects.shp")
+def process_file(file, moving_average=True, fix_accretion=True):
+    site = os.path.basename(file).replace("_Intersects_Proxy.shp", "")
+    gdf = gpd.read_file(file)
     gdf.crs = 2193
     gdf = enrich_df(gdf)
-    transect_metadata = get_transect_metadata(f"Shapefiles/{site}_TransectLines.shp")
+    
+    lines = gdf.groupby("TransectID")[["geometry", "Distance"]].apply(get_transects)
+    lines.crs = gdf.crs
+    transect_metadata = get_transect_metadata(lines)
+
     linear_models = fit(gdf, transect_metadata)
     linear_models["original_slope"] = linear_models.slope
     # Erosion only
@@ -218,20 +243,33 @@ def process_file(index_and_row, moving_average=True, fix_accretion=True):
         print("Flipping")
         for k, v in transect_metadata.items():
             transect_metadata[k]["Azimuth"] = v["Azimuth"] + 180
-    for SLR_rate_column_name in SLR_rate_column_names:
-        results = predict(gdf, linear_models, transect_metadata, Proj_SLR=row[SLR_rate_column_name])
-        if fix_accretion:
-            results = gpd.GeoDataFrame(results[results.linear_model_distance >= 0])
-        for model in SUPPORTED_MODELS:
-            results.set_geometry(f"{model}_model_point", inplace=True, crs=2193)
-            polygon = prediction_results_to_polygon(results)
-            os.makedirs("Projected_Shoreline_Polygons", exist_ok=True)
-            if model == "linear":
-                output_shapefile = f"Projected_Shoreline_Polygons/{site}_{model}.shp"
-            else:
-                output_shapefile = f"Projected_Shoreline_Polygons/{site}_{model}_{SLR_rate_column_name}.shp"
-            polygon.to_file(output_shapefile, driver="ESRI Shapefile")
-        results.to_csv(f"Projected_Shoreline_Polygons/{site}_{SLR_rate_column_name}_results.csv", index=False)
+    results = predict(gdf, linear_models, transect_metadata)
+    if fix_accretion:
+        results = gpd.GeoDataFrame(results[results.linear_model_distance >= 0])
+    #Saving line and polygon projection file to folder in VS Code. Change file location accordingly
+
+    for model in SUPPORTED_MODELS:
+        results.set_geometry(f"{model}_model_point", inplace=True, crs=2193)
+        lines, polygon = prediction_results_to_line_polygon(results)
+        os.makedirs("Projections", exist_ok=True)
+        polygon.to_file(f"Projections/{site}_{model}_polygon.shp")
+        lines.to_file(f"Projections/{site}_{model}_line.shp")
+
+        #Smoothening occurs here. Currently 500 steps of Taubin's algorithm applied. Change the file name and location accordingly.  
+        lines.apply(lambda line: taubin_smooth(line, steps=500)).to_file(f"Projections/{site}_line_smoothed.shp")
+
+        good_results = results[results.proxy.isin(["1", "2", "3", "4", "5", "6", "0,1", "0,2", "0,3", "0,4", "0,5", "0,6", "2,3", "1,4", "1,5", "1,6", "1,5,6"])]
+        
+        good_results.set_geometry(f"{model}_model_point", inplace=True, crs=2193)
+        lines, polygon = prediction_results_to_line_polygon(results)
+        os.makedirs("Projections_good", exist_ok=True)
+        polygon.to_file(f"Projections_good/{site}_{model}_polygon.shp")
+        lines.to_file(f"Projections_good/{site}_{model}_line.shp")
+
+        #Smoothening occurs here. Currently 500 steps of Taubin's algorithm applied. Change the file name and location accordingly.  
+        lines.apply(lambda line: taubin_smooth(line, steps=500)).to_file(f"Projections_good/{site}_line_smoothed.shp")
+
+    results.to_csv(f"Projections/{site}_results.csv", index=False)
 
 
 def fuzz_preprocess(filename):
@@ -280,4 +318,8 @@ def run_all_parallel():
 
 if __name__ == "__main__":
     # run_all_sequential(moving_average=True)
-    run_all_parallel()
+    files = sorted(glob(f"Data/Merged Intersects_UniqueID_Proxy/*.shp"))
+    shutil.rmtree("Projections")
+    shutil.rmtree("Projections_good")
+    for f in tqdm(files):
+        process_file(f)
