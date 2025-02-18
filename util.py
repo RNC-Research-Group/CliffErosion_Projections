@@ -203,6 +203,27 @@ def prediction_results_to_line_polygon(results: gpd.GeoDataFrame):
     polygons = gpd.GeoSeries(polygons, crs=2193)
     return lines, polygons
 
+def prediction_results_to_line_polygon_and_smoothed(results: gpd.GeoDataFrame):
+    lines = []
+    smoothed_lines = []
+    polygons = []
+    smoothed_polygons = []
+    for group_name, group_data in results.groupby(["BaselineID", "group"]):
+        if len(group_data) > 1:
+            line = LineString(list(group_data.geometry))
+            lines.append(line)
+            smoothed_line = taubin_smooth(line, steps=500)
+            smoothed_lines.append(smoothed_line)
+            polygon = Polygon(list(group_data.geometry) + list(group_data.ocean_point)[::-1])
+            polygons.append(polygon)
+            smoothed_polygon = Polygon(list(smoothed_line.coords) + list(group_data.ocean_point)[::-1])
+            smoothed_polygons.append(smoothed_polygon)
+    lines = gpd.GeoSeries(lines, crs=2193)
+    smoothed_lines = gpd.GeoSeries(smoothed_lines, crs=2193)
+    polygons = gpd.GeoSeries(polygons, crs=2193)
+    smoothed_polygons = gpd.GeoSeries(smoothed_polygons, crs=2193)
+    return lines, polygons, smoothed_lines, smoothed_polygons
+
 
 def get_transect_metadata(lines):
     lines["dist_to_neighbour"] = lines.distance(lines.shift(-1))
@@ -250,24 +271,37 @@ def process_file(file, moving_average=True, fix_accretion=True):
 
     for model in SUPPORTED_MODELS:
         results.set_geometry(f"{model}_model_point", inplace=True, crs=2193)
-        lines, polygon = prediction_results_to_line_polygon(results)
+        lines, polygons, smoothed_lines, smoothed_polygons = prediction_results_to_line_polygon_and_smoothed(results)
         os.makedirs("Projections", exist_ok=True)
-        polygon.to_file(f"Projections/{site}_{model}_polygon.shp")
+        polygons.to_file(f"Projections/{site}_{model}_polygon.shp")
         lines.to_file(f"Projections/{site}_{model}_line.shp")
 
         #Smoothening occurs here. Currently 500 steps of Taubin's algorithm applied. Change the file name and location accordingly.  
-        lines.apply(lambda line: taubin_smooth(line, steps=500)).to_file(f"Projections/{site}_line_smoothed.shp")
+        smoothed_lines.to_file(f"Projections/{site}_{model}_line_smoothed.shp")
+        smoothed_polygons.to_file(f"Projections/{site}_{model}_polygon_smoothed.shp")
 
         good_results = results[results.proxy.isin(["1", "2", "3", "4", "5", "6", "0,1", "0,2", "0,3", "0,4", "0,5", "0,6", "2,3", "1,4", "1,5", "1,6", "1,5,6"])]
         
         good_results.set_geometry(f"{model}_model_point", inplace=True, crs=2193)
-        lines, polygon = prediction_results_to_line_polygon(results)
-        os.makedirs("Projections_good", exist_ok=True)
-        polygon.to_file(f"Projections_good/{site}_{model}_polygon.shp")
-        lines.to_file(f"Projections_good/{site}_{model}_line.shp")
+        lines, polygons, smoothed_lines, smoothed_polygons = prediction_results_to_line_polygon_and_smoothed(good_results)
+        if len(good_results) >= 1:
+            polygons.to_file(f"Projections_good/{site}_{model}_polygon.shp")
+            lines.to_file(f"Projections_good/{site}_{model}_line.shp")
+            #Smoothening occurs here. Currently 500 steps of Taubin's algorithm applied. Change the file name and location accordingly.  
+            smoothed_lines.to_file(f"Projections_good/{site}_{model}_line_smoothed.shp")
+            smoothed_polygons.to_file(f"Projections_good/{site}_{model}_polygon_smoothed.shp")
+            
 
-        #Smoothening occurs here. Currently 500 steps of Taubin's algorithm applied. Change the file name and location accordingly.  
-        lines.apply(lambda line: taubin_smooth(line, steps=500)).to_file(f"Projections_good/{site}_line_smoothed.shp")
+        if model in ["sqrt", "BH", "Sunamura"]:
+            good_results = results[results.proxy.isin(["2", "3", "0,2", "0,3", "2,3", "0,2,3"])]
+            good_results.set_geometry(f"{model}_model_point", inplace=True, crs=2193)
+            lines, polygons, smoothed_lines, smoothed_polygons = prediction_results_to_line_polygon_and_smoothed(good_results)
+            if len(good_results) >= 1:
+                polygons.to_file(f"Projections_best/{site}_{model}_polygon.shp")
+                lines.to_file(f"Projections_best/{site}_{model}_line.shp")
+                smoothed_lines.to_file(f"Projections_best/{site}_{model}_line_smoothed.shp")
+                smoothed_polygons.to_file(f"Projections_best/{site}_{model}_polygon_smoothed.shp")
+
 
     results.to_csv(f"Projections/{site}_results.csv", index=False)
 
@@ -319,7 +353,9 @@ def run_all_parallel():
 if __name__ == "__main__":
     # run_all_sequential(moving_average=True)
     files = sorted(glob(f"Data/Merged Intersects_UniqueID_Proxy/*.shp"))
-    shutil.rmtree("Projections")
-    shutil.rmtree("Projections_good")
+    for folder in ["Projections", "Projections_good", "Projections_best"]:
+        if os.path.isdir(folder):
+            shutil.rmtree(folder)
+            os.makedirs(folder, exist_ok=True)
     for f in tqdm(files):
         process_file(f)
